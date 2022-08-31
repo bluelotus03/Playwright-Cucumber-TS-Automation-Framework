@@ -1,1 +1,1 @@
-Testing Talks Hub React App
+Testing Talks Hub Udemy Course
