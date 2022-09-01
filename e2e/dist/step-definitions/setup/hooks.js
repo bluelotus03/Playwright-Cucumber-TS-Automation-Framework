@@ -44,7 +44,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
   var _ref2 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee2(scenario) {
     var _scenario$result;
 
-    var _this$screen, page, browser, scenarioStatus;
+    var _this$screen, page, browser, scenarioStatus, screenshot;
 
     return regeneratorRuntime.wrap(function _callee2$(_context2) {
       while (1) {
@@ -54,7 +54,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
             scenarioStatus = (_scenario$result = scenario.result) === null || _scenario$result === void 0 ? void 0 : _scenario$result.status;
 
             if (!(scenarioStatus === 'FAILED')) {
-              _context2.next = 5;
+              _context2.next = 8;
               break;
             }
 
@@ -64,13 +64,18 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
             });
 
           case 5:
-            _context2.next = 7;
-            return browser.close();
-
-          case 7:
-            return _context2.abrupt("return", browser);
+            screenshot = _context2.sent;
+            _context2.next = 8;
+            return this.attach(screenshot, 'image/png');
 
           case 8:
+            _context2.next = 10;
+            return browser.close();
+
+          case 10:
+            return _context2.abrupt("return", browser);
+
+          case 11:
           case "end":
             return _context2.stop();
         }
