@@ -4,17 +4,17 @@
     "elements": [
       {
         "description": "",
-        "id": "as-a-user-i-expect-to-be-able-to-navigate-to-the-home-page;as-a-user-i-expect-to-be-able-to-see-contacts",
+        "id": "as-a-user-i-expect-to-be-able-to-create-contacts;as-a-user-i-expect-to-be-able-to-create-a-new-contact",
         "keyword": "Scenario",
         "line": 4,
-        "name": "As a user I expect to be able to see contacts",
+        "name": "As a user I expect to be able to create a new contact",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 534861749
+              "duration": 884068628
             }
           },
           {
@@ -23,37 +23,50 @@
             "line": 5,
             "name": "I am on the \"home\" page",
             "match": {
-              "location": "src/step-definitions/navigation.ts:6"
+              "location": "src/step-definitions/navigation.ts:7"
             },
             "result": {
               "status": "passed",
-              "duration": 563917201
+              "duration": 650143260
             }
           },
           {
             "arguments": [],
-            "keyword": "Then ",
+            "keyword": "And ",
             "line": 6,
-            "name": "the \"header logo\" should be displayed",
+            "name": "I click the \"create\" button",
             "match": {
-              "location": "src/step-definitions/assertions/verify-element-visibility.ts:8"
+              "location": "src/step-definitions/click.ts:8"
             },
             "result": {
               "status": "passed",
-              "duration": 39798098
+              "duration": 131824289
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 7,
-            "name": "the \"contacts header\" should contain the text \"Contacts\"",
+            "name": "I am directed to the \"create contact\" page",
+            "match": {
+              "location": "src/step-definitions/navigation.ts:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 501069
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "the \"create contact header\" should contain the text \"Create Contact\"",
             "match": {
               "location": "src/step-definitions/assertions/verify-element-value.ts:8"
             },
             "result": {
               "status": "passed",
-              "duration": 14545150
+              "duration": 9382686
             }
           },
           {
@@ -61,7 +74,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 47575604
+              "duration": 76555480
             }
           }
         ],
@@ -69,24 +82,16 @@
           {
             "name": "@dev",
             "line": 3
-          },
-          {
-            "name": "@smoke",
-            "line": 3
-          },
-          {
-            "name": "@regression",
-            "line": 3
           }
         ],
         "type": "scenario"
       }
     ],
-    "id": "as-a-user-i-expect-to-be-able-to-navigate-to-the-home-page",
+    "id": "as-a-user-i-expect-to-be-able-to-create-contacts",
     "line": 1,
     "keyword": "Feature",
-    "name": "As a user I expect to be able to navigate to the home page",
+    "name": "As a user I expect to be able to create contacts",
     "tags": [],
-    "uri": "src/features/home-page.feature"
+    "uri": "src/features/create-contact.feature"
   }
 ]
