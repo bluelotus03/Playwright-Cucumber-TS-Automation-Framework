@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1902693634
+              "duration": 1068242660
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 683453434
+              "duration": 808202893
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 151748674
+              "duration": 144625002
             }
           },
           {
@@ -53,20 +53,20 @@
             },
             "result": {
               "status": "passed",
-              "duration": 444185
+              "duration": 363652
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 8,
-            "name": "the \"create contact header\" should contain the text \"Create Contact\"",
+            "name": "the \"create contact header\" should equal the text \"Create Contact\"",
             "match": {
-              "location": "src/step-definitions/assertions/verify-element-value.ts:8"
+              "location": "src/step-definitions/assertions/verify-element-value.ts:26"
             },
             "result": {
               "status": "passed",
-              "duration": 14650444
+              "duration": 10769547
             }
           },
           {
@@ -79,7 +79,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 63398241
+              "duration": 49273102
             }
           },
           {
@@ -92,7 +92,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 32496001
+              "duration": 109577495
             }
           },
           {
@@ -105,7 +105,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 53657305
+              "duration": 40638545
             }
           },
           {
@@ -118,7 +118,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 48083791
+              "duration": 41448421
             }
           },
           {
@@ -131,7 +131,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 37273878
+              "duration": 51510998
             }
           },
           {
@@ -144,7 +144,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 107337892
+              "duration": 127877876
             }
           },
           {
@@ -157,7 +157,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 226858
+              "duration": 353956
             }
           },
           {
@@ -170,7 +170,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 25814808
+              "duration": 45248262
             }
           },
           {
@@ -183,20 +183,20 @@
             },
             "result": {
               "status": "passed",
-              "duration": 6316805
+              "duration": 9601109
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 19,
-            "name": "the \"name\" should contain the text \"Jane Doe\"",
+            "name": "the \"name\" should equal the text \"Jane Doe\"",
             "match": {
-              "location": "src/step-definitions/assertions/verify-element-value.ts:8"
+              "location": "src/step-definitions/assertions/verify-element-value.ts:26"
             },
             "result": {
               "status": "passed",
-              "duration": 7295022
+              "duration": 11036201
             }
           },
           {
@@ -209,20 +209,20 @@
             },
             "result": {
               "status": "passed",
-              "duration": 8126674
+              "duration": 9110934
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 21,
-            "name": "the \"gender\" should contain the text \"Female\"",
+            "name": "the \"gender\" should equal the text \"Female\"",
             "match": {
-              "location": "src/step-definitions/assertions/verify-element-value.ts:8"
+              "location": "src/step-definitions/assertions/verify-element-value.ts:26"
             },
             "result": {
               "status": "passed",
-              "duration": 15849023
+              "duration": 12589849
             }
           },
           {
@@ -235,20 +235,20 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5769597
+              "duration": 10506597
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 23,
-            "name": "the \"address\" should contain the text \"123 Example Rd\"",
+            "name": "the \"address\" should equal the text \"123 Example Rd, Exampleville\"",
             "match": {
-              "location": "src/step-definitions/assertions/verify-element-value.ts:8"
+              "location": "src/step-definitions/assertions/verify-element-value.ts:26"
             },
             "result": {
               "status": "passed",
-              "duration": 5087044
+              "duration": 8088499
             }
           },
           {
@@ -261,7 +261,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4940047
+              "duration": 7437381
             }
           },
           {
@@ -274,7 +274,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 6732743
+              "duration": 6045274
             }
           },
           {
@@ -282,7 +282,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 257151524
+              "duration": 308409166
             }
           }
         ],
