@@ -12,3 +12,14 @@ Feature: As a user I expect to be able to create contacts
         And I fill in the "street" input with "123 Example Rd"
         And I fill in the "city" input with "Exampleville"
         And I click the "save" button
+
+        And I am directed to the "home" page
+        And I fill in the "search" input with "Jane Doe"
+        And the "full name label" should contain the text "Name:"
+        And the "name" should contain the text "Jane Doe"
+        And the "gender label" should contain the text "Gender:"
+        And the "gender" should contain the text "Female"
+        And the "address label" should contain the text "Address:"
+        And the "address" should contain the text "123 Example Rd"
+        And the "edit" should be displayed
+        And the "delete" should be displayed
