@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 884068628
+              "duration": 1710610329
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 650143260
+              "duration": 587494014
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 131824289
+              "duration": 121700240
             }
           },
           {
@@ -53,7 +53,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 501069
+              "duration": 507833
             }
           },
           {
@@ -66,7 +66,85 @@
             },
             "result": {
               "status": "passed",
-              "duration": 9382686
+              "duration": 14861979
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I fill in the \"name\" input with \"Jane Doe\"",
+            "match": {
+              "location": "src/step-definitions/form.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 58065229
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I select the \"Female\" option from the \"gender\"",
+            "match": {
+              "location": "src/step-definitions/form.ts:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 31941602
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "I fill in the \"phone\" input with \"8987788965\"",
+            "match": {
+              "location": "src/step-definitions/form.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 63605438
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "I fill in the \"street\" input with \"123 Example Rd\"",
+            "match": {
+              "location": "src/step-definitions/form.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 45136494
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "I fill in the \"city\" input with \"Exampleville\"",
+            "match": {
+              "location": "src/step-definitions/form.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 36423416
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "I click the \"save\" button",
+            "match": {
+              "location": "src/step-definitions/click.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 132574681
             }
           },
           {
@@ -74,7 +152,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 76555480
+              "duration": 215338039
             }
           }
         ],
