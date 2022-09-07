@@ -14,7 +14,7 @@ Then(
             globalConfig,
         } = this;
 
-        console.log(`the ${elementKey} should ${negate?'not':''} contain the text ${expectedElementText}`);
+        console.log(`the ${elementKey} should ${negate?'not ':''}contain the text ${expectedElementText}`);
         const elementIdentifier = getElementLocator(page, elementKey, globalConfig);
         
         await waitFor( async () => {
@@ -31,7 +31,7 @@ Then(
             screen: { page },
             globalConfig,
         } = this;
-        console.log(`the ${elementKey} should ${negate?'not':''}equal the text ${expectedElementText}`);
+        console.log(`the ${elementKey} should ${negate?'not ':''}equal the text ${expectedElementText}`);
 
         const elementIdentifier = getElementLocator(page, elementKey, globalConfig);
 
@@ -49,7 +49,7 @@ Then(
             screen: { page },
             globalConfig,
         } = this;
-        console.log(`the ${elementKey} should ${negate?'not':''}equal the text ${elementValue}`);
+        console.log(`the ${elementKey} should ${negate?'not ':''}equal the text ${elementValue}`);
 
         const elementIdentifier = getElementLocator(page, elementKey, globalConfig);
 
@@ -67,7 +67,7 @@ Then(
             screen: { page },
             globalConfig,
         } = this;
-        console.log(`the ${elementKey} should ${negate?'not':''} equal the text ${elementValue}`);
+        console.log(`the ${elementKey} should ${negate?'not ':''}equal the text ${elementValue}`);
 
         const elementIdentifier = getElementLocator(page, elementKey, globalConfig);
 
@@ -85,7 +85,7 @@ Then(
             screen: { page },
             globalConfig,
         } = this;
-        console.log(`the ${elementKey} should ${negate?'not':''} be enabled`);
+        console.log(`the ${elementKey} should ${negate?'not ':''}be enabled`);
 
         const elementIdentifier = getElementLocator(page, elementKey, globalConfig);
 
