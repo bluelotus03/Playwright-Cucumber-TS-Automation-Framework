@@ -21,4 +21,4 @@ Then(
             return isElementVisible === !negate;
         })
     }
-)
+);
