@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1920292289
+              "duration": 1400856034
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 640350201
+              "duration": 859965256
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 481833770
+              "duration": 187757692
             }
           },
           {
@@ -53,7 +53,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 426447
+              "duration": 1089347
             }
           },
           {
@@ -66,7 +66,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 22900168
+              "duration": 73033726
             }
           },
           {
@@ -79,7 +79,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 100103307
+              "duration": 79137160
             }
           },
           {
@@ -92,7 +92,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 86547240
+              "duration": 64392508
             }
           },
           {
@@ -105,7 +105,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 46878704
+              "duration": 101753082
             }
           },
           {
@@ -118,7 +118,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 56384109
+              "duration": 54384984
             }
           },
           {
@@ -131,7 +131,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 38744688
+              "duration": 43195909
             }
           },
           {
@@ -144,7 +144,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 133775388
+              "duration": 141788274
             }
           },
           {
@@ -157,7 +157,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 440319
+              "duration": 1287258
             }
           },
           {
@@ -170,111 +170,124 @@
             },
             "result": {
               "status": "passed",
-              "duration": 46161007
+              "duration": 61379559
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 18,
-            "name": "the \"full name label\" should contain the text \"Name:\"",
+            "name": "the \"search\" should not equal the text \"Jane Does\"",
             "match": {
-              "location": "src/step-definitions/assertions/verify-element-value.ts:8"
+              "location": "src/step-definitions/assertions/verify-element-value.ts:26"
             },
             "result": {
               "status": "passed",
-              "duration": 9189952
+              "duration": 12357070
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 19,
-            "name": "the \"name\" should equal the text \"Jane Doe\"",
+            "name": "the \"full name label\" should contain the text \"Name:\"",
             "match": {
-              "location": "src/step-definitions/assertions/verify-element-value.ts:26"
+              "location": "src/step-definitions/assertions/verify-element-value.ts:8"
             },
             "result": {
               "status": "passed",
-              "duration": 13815243
+              "duration": 12111917
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 20,
-            "name": "the \"gender label\" should contain the text \"Gender:\"",
+            "name": "the \"name\" should equal the text \"Jane Doe\"",
             "match": {
-              "location": "src/step-definitions/assertions/verify-element-value.ts:8"
+              "location": "src/step-definitions/assertions/verify-element-value.ts:26"
             },
             "result": {
               "status": "passed",
-              "duration": 9315388
+              "duration": 8732661
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 21,
-            "name": "the \"gender\" should equal the text \"Female\"",
+            "name": "the \"gender label\" should contain the text \"Gender:\"",
             "match": {
-              "location": "src/step-definitions/assertions/verify-element-value.ts:26"
+              "location": "src/step-definitions/assertions/verify-element-value.ts:8"
             },
             "result": {
               "status": "passed",
-              "duration": 13727383
+              "duration": 11693634
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 22,
-            "name": "the \"address label\" should contain the text \"Address:\"",
+            "name": "the \"gender\" should equal the text \"Female\"",
             "match": {
-              "location": "src/step-definitions/assertions/verify-element-value.ts:8"
+              "location": "src/step-definitions/assertions/verify-element-value.ts:26"
             },
             "result": {
               "status": "passed",
-              "duration": 12135010
+              "duration": 13203289
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 23,
-            "name": "the \"address\" should equal the text \"123 Example Rd, Exampleville\"",
+            "name": "the \"address label\" should contain the text \"Address:\"",
             "match": {
-              "location": "src/step-definitions/assertions/verify-element-value.ts:26"
+              "location": "src/step-definitions/assertions/verify-element-value.ts:8"
             },
             "result": {
               "status": "passed",
-              "duration": 13802571
+              "duration": 7975374
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 24,
-            "name": "the \"edit\" should be displayed",
+            "name": "the \"address\" should equal the text \"123 Example Rd, Exampleville\"",
             "match": {
-              "location": "src/step-definitions/assertions/verify-element-visibility.ts:8"
+              "location": "src/step-definitions/assertions/verify-element-value.ts:26"
             },
             "result": {
               "status": "passed",
-              "duration": 7262328
+              "duration": 9061710
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 25,
+            "name": "the \"edit\" should be displayed",
+            "match": {
+              "location": "src/step-definitions/assertions/verify-element-visibility.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5954949
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 26,
             "name": "the \"delete\" should be displayed",
             "match": {
               "location": "src/step-definitions/assertions/verify-element-visibility.ts:8"
             },
             "result": {
               "status": "passed",
-              "duration": 7879219
+              "duration": 10393463
             }
           },
           {
@@ -282,13 +295,21 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 271061568
+              "duration": 289793115
             }
           }
         ],
         "tags": [
           {
             "name": "@dev",
+            "line": 3
+          },
+          {
+            "name": "@smoke",
+            "line": 3
+          },
+          {
+            "name": "@regression",
             "line": 3
           }
         ],
