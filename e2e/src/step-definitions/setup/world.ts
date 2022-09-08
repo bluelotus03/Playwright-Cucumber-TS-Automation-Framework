@@ -15,9 +15,11 @@ export class ScenarioWorld extends World {
         super(options);
 
         this.globalConfig = options.parameters as GlobalConfig;
+        //this.globalVariables = {};
     }
 
     globalConfig: GlobalConfig;
+    //globalVariables: GlobalVariables;
     screen!: Screen;
 
     async init(contextOptions?: BrowserContextOptions): Promise<Screen> {

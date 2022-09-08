@@ -85,7 +85,8 @@ var ScenarioWorld = /*#__PURE__*/function (_World) {
       }, _callee);
     })));
 
-    _this.globalConfig = options.parameters;
+    _this.globalConfig = options.parameters; //this.globalVariables = {};
+
     return _this;
   }
 
