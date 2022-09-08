@@ -79,7 +79,7 @@ Then(
 );
 
 Then(
-    /^the "(.*)" should( not)? be enabled$/,
+    /^the "(.*)"(?: switch) should( not)? be enabled$/,
     async function(this: ScenarioWorld, elementKey: ElementKey, negate: boolean) {
         const {
             screen: { page },

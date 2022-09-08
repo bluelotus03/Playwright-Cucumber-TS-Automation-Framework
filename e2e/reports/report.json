@@ -4,17 +4,17 @@
     "elements": [
       {
         "description": "",
-        "id": "as-a-user-i-can-interact-with-tables;as-a-user-i-can-interact-and-assert-on-tables",
+        "id": "as-a-user-i-can-interact-with-switches;as-a-user-i-can-interact-and-assert-on-switches",
         "keyword": "Scenario",
         "line": 4,
-        "name": "As a user I can interact and assert on tables",
+        "name": "As a user I can interact and assert on switches",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1730268131
+              "duration": 1190410261
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 688264306
+              "duration": 922972589
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 578507013
+              "duration": 225250985
             }
           },
           {
@@ -53,123 +53,72 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1622808
+              "duration": 1724452
             }
           },
           {
-            "arguments": [
-              {
-                "rows": [
-                  {
-                    "cells": [
-                      "159",
-                      "6",
-                      "24",
-                      "4"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "237",
-                      "9",
-                      "37",
-                      "4.3"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "262",
-                      "16",
-                      "24",
-                      "6"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "305",
-                      "3.7",
-                      "67",
-                      "4.3"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "356",
-                      "16",
-                      "49",
-                      "3.9"
-                    ]
-                  }
-                ]
-              }
-            ],
+            "arguments": [],
             "keyword": "And ",
             "line": 8,
-            "name": "the \"basic\" table should equal the following:",
+            "name": "the \"switch one\" switch should be checked",
             "match": {
-              "location": "src/step-definitions/assertions/verify-table-value.ts:7"
+              "location": "src/step-definitions/assertions/verify-element-checked.ts:7"
             },
             "result": {
               "status": "passed",
-              "duration": 844861419
+              "duration": 747705085
             }
           },
           {
-            "arguments": [
-              {
-                "rows": [
-                  {
-                    "cells": [
-                      "159",
-                      "6",
-                      "24",
-                      "4"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "237",
-                      "9",
-                      "37",
-                      "4.3"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "262",
-                      "16",
-                      "24",
-                      "6"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "305",
-                      "3.4",
-                      "67",
-                      "4.3"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "356",
-                      "16",
-                      "49",
-                      "3.9"
-                    ]
-                  }
-                ]
-              }
-            ],
-            "keyword": "And ",
-            "line": 14,
-            "name": "the \"basic\" table should not equal the following:",
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "I uncheck the \"switch one\" switch",
             "match": {
-              "location": "src/step-definitions/assertions/verify-table-value.ts:7"
+              "location": "src/step-definitions/check.ts:8"
             },
             "result": {
               "status": "passed",
-              "duration": 296230858
+              "duration": 413529569
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "the \"switch one\" switch should not be checked",
+            "match": {
+              "location": "src/step-definitions/assertions/verify-element-checked.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9458243
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "I check the \"switch one\" switch",
+            "match": {
+              "location": "src/step-definitions/check.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 164981654
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "the \"switch one\" switch should be checked",
+            "match": {
+              "location": "src/step-definitions/assertions/verify-element-checked.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10484154
             }
           },
           {
@@ -177,7 +126,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 331895180
+              "duration": 352456876
             }
           }
         ],
@@ -198,11 +147,11 @@
         "type": "scenario"
       }
     ],
-    "id": "as-a-user-i-can-interact-with-tables",
+    "id": "as-a-user-i-can-interact-with-switches",
     "line": 1,
     "keyword": "Feature",
-    "name": "As a user I can interact with tables",
+    "name": "As a user I can interact with switches",
     "tags": [],
-    "uri": "src/features/playground/tables.feature"
+    "uri": "src/features/playground/switches.feature"
   }
 ]

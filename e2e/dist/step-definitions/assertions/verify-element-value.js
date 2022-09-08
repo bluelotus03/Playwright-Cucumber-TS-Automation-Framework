@@ -188,7 +188,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
     return _ref7.apply(this, arguments);
   };
 }());
-(0, _cucumber.Then)(/^the "(.*)" should( not)? be enabled$/, /*#__PURE__*/function () {
+(0, _cucumber.Then)(/^the "(.*)"(?: switch) should( not)? be enabled$/, /*#__PURE__*/function () {
   var _ref9 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee10(elementKey, negate) {
     var page, globalConfig, elementIdentifier;
     return regeneratorRuntime.wrap(function _callee10$(_context10) {
