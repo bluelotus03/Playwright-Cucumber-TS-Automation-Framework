@@ -63,6 +63,15 @@ export const getValue = async (
     return value;
 };
 
+export const getAttributeText = async (
+    page: Page,
+    elementIdentifier: ElementLocator,
+    attribute: string,
+): Promise<string | null> => {
+    const attributeText = page.locator(elementIdentifier).getAttribute(attribute);
+    return attributeText;
+};
+
 export const getIframeElement = async (
     page: Page,
     iframeIdentifier: ElementLocator,

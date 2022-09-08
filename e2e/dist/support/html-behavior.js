@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.uncheckElement = exports.selectValue = exports.inputValueOnPage = exports.inputValueOnIframe = exports.inputValue = exports.getValue = exports.getIframeElement = exports.clickElementAtIndex = exports.clickElement = exports.checkElement = void 0;
+exports.uncheckElement = exports.selectValue = exports.inputValueOnPage = exports.inputValueOnIframe = exports.inputValue = exports.getValue = exports.getIframeElement = exports.getAttributeText = exports.clickElementAtIndex = exports.clickElement = exports.checkElement = void 0;
 
 function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
 
@@ -202,30 +202,17 @@ var getValue = /*#__PURE__*/function () {
 
 exports.getValue = getValue;
 
-var getIframeElement = /*#__PURE__*/function () {
-  var _ref8 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee8(page, iframeIdentifier) {
-    var elementHandle, elementIframe;
+var getAttributeText = /*#__PURE__*/function () {
+  var _ref8 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee8(page, elementIdentifier, attribute) {
+    var attributeText;
     return regeneratorRuntime.wrap(function _callee8$(_context8) {
       while (1) {
         switch (_context8.prev = _context8.next) {
           case 0:
-            _context8.next = 2;
-            return page.waitForSelector(iframeIdentifier);
+            attributeText = page.locator(elementIdentifier).getAttribute(attribute);
+            return _context8.abrupt("return", attributeText);
 
           case 2:
-            _context8.next = 4;
-            return page.$(iframeIdentifier);
-
-          case 4:
-            elementHandle = _context8.sent;
-            _context8.next = 7;
-            return elementHandle === null || elementHandle === void 0 ? void 0 : elementHandle.contentFrame();
-
-          case 7:
-            elementIframe = _context8.sent;
-            return _context8.abrupt("return", elementIframe);
-
-          case 9:
           case "end":
             return _context8.stop();
         }
@@ -233,23 +220,37 @@ var getIframeElement = /*#__PURE__*/function () {
     }, _callee8);
   }));
 
-  return function getIframeElement(_x18, _x19) {
+  return function getAttributeText(_x18, _x19, _x20) {
     return _ref8.apply(this, arguments);
   };
 }();
 
-exports.getIframeElement = getIframeElement;
+exports.getAttributeText = getAttributeText;
 
-var inputValueOnIframe = /*#__PURE__*/function () {
-  var _ref9 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee9(elementIframe, elementIdentifier, inputValue) {
+var getIframeElement = /*#__PURE__*/function () {
+  var _ref9 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee9(page, iframeIdentifier) {
+    var elementHandle, elementIframe;
     return regeneratorRuntime.wrap(function _callee9$(_context9) {
       while (1) {
         switch (_context9.prev = _context9.next) {
           case 0:
             _context9.next = 2;
-            return elementIframe.fill(elementIdentifier, inputValue);
+            return page.waitForSelector(iframeIdentifier);
 
           case 2:
+            _context9.next = 4;
+            return page.$(iframeIdentifier);
+
+          case 4:
+            elementHandle = _context9.sent;
+            _context9.next = 7;
+            return elementHandle === null || elementHandle === void 0 ? void 0 : elementHandle.contentFrame();
+
+          case 7:
+            elementIframe = _context9.sent;
+            return _context9.abrupt("return", elementIframe);
+
+          case 9:
           case "end":
             return _context9.stop();
         }
@@ -257,27 +258,23 @@ var inputValueOnIframe = /*#__PURE__*/function () {
     }, _callee9);
   }));
 
-  return function inputValueOnIframe(_x20, _x21, _x22) {
+  return function getIframeElement(_x21, _x22) {
     return _ref9.apply(this, arguments);
   };
 }();
 
-exports.inputValueOnIframe = inputValueOnIframe;
+exports.getIframeElement = getIframeElement;
 
-var inputValueOnPage = /*#__PURE__*/function () {
-  var _ref10 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee10(pages, pageIndex, elementIdentifier, inputValue) {
+var inputValueOnIframe = /*#__PURE__*/function () {
+  var _ref10 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee10(elementIframe, elementIdentifier, inputValue) {
     return regeneratorRuntime.wrap(function _callee10$(_context10) {
       while (1) {
         switch (_context10.prev = _context10.next) {
           case 0:
             _context10.next = 2;
-            return pages[pageIndex].focus(elementIdentifier);
+            return elementIframe.fill(elementIdentifier, inputValue);
 
           case 2:
-            _context10.next = 4;
-            return pages[pageIndex].fill(elementIdentifier, inputValue);
-
-          case 4:
           case "end":
             return _context10.stop();
         }
@@ -285,8 +282,36 @@ var inputValueOnPage = /*#__PURE__*/function () {
     }, _callee10);
   }));
 
-  return function inputValueOnPage(_x23, _x24, _x25, _x26) {
+  return function inputValueOnIframe(_x23, _x24, _x25) {
     return _ref10.apply(this, arguments);
+  };
+}();
+
+exports.inputValueOnIframe = inputValueOnIframe;
+
+var inputValueOnPage = /*#__PURE__*/function () {
+  var _ref11 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee11(pages, pageIndex, elementIdentifier, inputValue) {
+    return regeneratorRuntime.wrap(function _callee11$(_context11) {
+      while (1) {
+        switch (_context11.prev = _context11.next) {
+          case 0:
+            _context11.next = 2;
+            return pages[pageIndex].focus(elementIdentifier);
+
+          case 2:
+            _context11.next = 4;
+            return pages[pageIndex].fill(elementIdentifier, inputValue);
+
+          case 4:
+          case "end":
+            return _context11.stop();
+        }
+      }
+    }, _callee11);
+  }));
+
+  return function inputValueOnPage(_x26, _x27, _x28, _x29) {
+    return _ref11.apply(this, arguments);
   };
 }();
 

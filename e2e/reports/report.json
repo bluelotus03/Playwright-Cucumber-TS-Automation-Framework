@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 2256051143
+              "duration": 3133668652
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1465058104
+              "duration": 1682224647
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 294922930
+              "duration": 266193913
             }
           },
           {
@@ -53,7 +53,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2147763
+              "duration": 2223139
             }
           },
           {
@@ -66,7 +66,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 26188327
+              "duration": 17820351
             }
           },
           {
@@ -79,7 +79,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 472705147
+              "duration": 773333349
             }
           },
           {
@@ -92,7 +92,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 211186151
+              "duration": 116663810
             }
           },
           {
@@ -105,7 +105,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 77965230
+              "duration": 68111490
             }
           },
           {
@@ -118,7 +118,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 163396518
+              "duration": 68604312
             }
           },
           {
@@ -131,7 +131,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 139025462
+              "duration": 45629878
             }
           },
           {
@@ -144,7 +144,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 180077598
+              "duration": 158606369
             }
           },
           {
@@ -157,7 +157,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 837798
+              "duration": 369282
             }
           },
           {
@@ -170,7 +170,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 78532147
+              "duration": 57081344
             }
           },
           {
@@ -183,7 +183,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 19849681
+              "duration": 17217900
             }
           },
           {
@@ -196,7 +196,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 31105789
+              "duration": 45244537
             }
           },
           {
@@ -209,7 +209,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 16116295
+              "duration": 14199666
             }
           },
           {
@@ -222,7 +222,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 53383806
+              "duration": 24675889
             }
           },
           {
@@ -235,7 +235,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 94950355
+              "duration": 13852692
             }
           },
           {
@@ -248,7 +248,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 58147262
+              "duration": 10829529
             }
           },
           {
@@ -261,7 +261,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 33202207
+              "duration": 12272999
             }
           },
           {
@@ -274,7 +274,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 25788089
+              "duration": 10429453
             }
           },
           {
@@ -287,7 +287,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 19668540
+              "duration": 7851976
             }
           },
           {
@@ -295,7 +295,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 399512691
+              "duration": 1074339256
             }
           }
         ],
@@ -334,7 +334,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1777945881
+              "duration": 2679478432
             }
           },
           {
@@ -347,7 +347,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1552795021
+              "duration": 1816899615
             }
           },
           {
@@ -360,7 +360,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 182363262
+              "duration": 193078078
             }
           },
           {
@@ -373,7 +373,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 24025828
+              "duration": 50342385
             }
           },
           {
@@ -381,7 +381,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 688437863
+              "duration": 1053565819
             }
           }
         ],
@@ -409,7 +409,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 2104684460
+              "duration": 2674639474
             }
           },
           {
@@ -422,7 +422,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1347156599
+              "duration": 1694829164
             }
           },
           {
@@ -435,7 +435,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 391383107
+              "duration": 500056844
             }
           },
           {
@@ -448,7 +448,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 12677124
+              "duration": 42857868
             }
           },
           {
@@ -456,7 +456,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 410511789
+              "duration": 887507910
             }
           }
         ],
@@ -495,7 +495,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1870868898
+              "duration": 2802999774
             }
           },
           {
@@ -508,7 +508,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 867078286
+              "duration": 1442687404
             }
           },
           {
@@ -521,7 +521,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 252696013
+              "duration": 339729871
             }
           },
           {
@@ -534,7 +534,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1735585
+              "duration": 5419249
             }
           },
           {
@@ -547,7 +547,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3073289181
+              "duration": 3338621076
             }
           },
           {
@@ -560,7 +560,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5504570
+              "duration": 4463259
             }
           },
           {
@@ -573,7 +573,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 376349313
+              "duration": 1540777633
             }
           },
           {
@@ -586,7 +586,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 826156
+              "duration": 732398
             }
           },
           {
@@ -594,7 +594,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 566680783
+              "duration": 889538545
             }
           }
         ],
@@ -633,7 +633,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 2051396943
+              "duration": 2528583225
             }
           },
           {
@@ -646,7 +646,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1719213637
+              "duration": 1228324416
             }
           },
           {
@@ -659,7 +659,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 490821140
+              "duration": 1742345587
             }
           },
           {
@@ -672,7 +672,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3263128
+              "duration": 6729307
             }
           },
           {
@@ -685,7 +685,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2281396266
+              "duration": 1991926662
             }
           },
           {
@@ -698,7 +698,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 36451882
+              "duration": 21472739
             }
           },
           {
@@ -711,7 +711,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 183963196
+              "duration": 216695667
             }
           },
           {
@@ -724,7 +724,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 63935961
+              "duration": 18523355
             }
           },
           {
@@ -737,7 +737,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 256671001
+              "duration": 262441499
             }
           },
           {
@@ -750,7 +750,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 13252011
+              "duration": 27212481
             }
           },
           {
@@ -758,7 +758,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 404758339
+              "duration": 886284413
             }
           }
         ],
@@ -797,7 +797,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1649929623
+              "duration": 1995557905
             }
           },
           {
@@ -810,7 +810,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1011963266
+              "duration": 1341143424
             }
           },
           {
@@ -823,7 +823,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 951336290
+              "duration": 207016252
             }
           },
           {
@@ -836,7 +836,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 405968
+              "duration": 348150
             }
           },
           {
@@ -849,7 +849,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1912411648
+              "duration": 1991837292
             }
           },
           {
@@ -862,7 +862,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 568099046
+              "duration": 1612659250
             }
           },
           {
@@ -875,7 +875,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 106283115
+              "duration": 196537081
             }
           },
           {
@@ -888,7 +888,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 21451225
+              "duration": 16081307
             }
           },
           {
@@ -901,7 +901,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 22035525
+              "duration": 17054144
             }
           },
           {
@@ -914,7 +914,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 103583734
+              "duration": 152730916
             }
           },
           {
@@ -927,7 +927,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 11586409
+              "duration": 20752415
             }
           },
           {
@@ -935,7 +935,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1144316967
+              "duration": 1033163077
             }
           }
         ],
@@ -974,7 +974,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 2171433457
+              "duration": 2041625660
             }
           },
           {
@@ -987,7 +987,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1109992986
+              "duration": 1251948108
             }
           },
           {
@@ -1000,7 +1000,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 297518295
+              "duration": 387865721
             }
           },
           {
@@ -1013,7 +1013,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1025878
+              "duration": 821794
             }
           },
           {
@@ -1026,7 +1026,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2463661362
+              "duration": 2315937726
             }
           },
           {
@@ -1039,7 +1039,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 64321563
+              "duration": 85009715
             }
           },
           {
@@ -1052,7 +1052,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 254868820
+              "duration": 103056787
             }
           },
           {
@@ -1065,7 +1065,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 87761975
+              "duration": 58885597
             }
           },
           {
@@ -1078,7 +1078,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 75135380
+              "duration": 56961688
             }
           },
           {
@@ -1091,7 +1091,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 75627781
+              "duration": 79874030
             }
           },
           {
@@ -1104,7 +1104,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 171517729
+              "duration": 44276386
             }
           },
           {
@@ -1117,7 +1117,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 42165462
+              "duration": 73289489
             }
           },
           {
@@ -1130,7 +1130,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 49069373
+              "duration": 129115296
             }
           },
           {
@@ -1143,7 +1143,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 95018697
+              "duration": 96930972
             }
           },
           {
@@ -1151,7 +1151,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 727894685
+              "duration": 460277761
             }
           }
         ],
@@ -1190,7 +1190,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 2559932613
+              "duration": 2166443520
             }
           },
           {
@@ -1203,7 +1203,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1053923437
+              "duration": 1003751163
             }
           },
           {
@@ -1216,7 +1216,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 751184912
+              "duration": 206502861
             }
           },
           {
@@ -1229,7 +1229,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 529780
+              "duration": 733098
             }
           },
           {
@@ -1242,7 +1242,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2659675201
+              "duration": 3247226179
             }
           },
           {
@@ -1255,7 +1255,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 219137861
+              "duration": 243049820
             }
           },
           {
@@ -1268,7 +1268,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 18063524
+              "duration": 32297482
             }
           },
           {
@@ -1281,7 +1281,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 12369140
+              "duration": 17491564
             }
           },
           {
@@ -1289,7 +1289,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 415675586
+              "duration": 800078878
             }
           }
         ],
@@ -1317,7 +1317,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 2106989612
+              "duration": 2335609520
             }
           },
           {
@@ -1330,7 +1330,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 836048971
+              "duration": 894910991
             }
           },
           {
@@ -1343,7 +1343,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 875525887
+              "duration": 247019954
             }
           },
           {
@@ -1356,7 +1356,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 855973
+              "duration": 625653
             }
           },
           {
@@ -1369,7 +1369,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2458441648
+              "duration": 2626689686
             }
           },
           {
@@ -1382,7 +1382,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 37818114
+              "duration": 35100176
             }
           },
           {
@@ -1395,7 +1395,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 25536092
+              "duration": 17037473
             }
           },
           {
@@ -1408,7 +1408,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 35348125
+              "duration": 15506750
             }
           },
           {
@@ -1421,7 +1421,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 147035778
+              "duration": 106869611
             }
           },
           {
@@ -1434,7 +1434,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 118772317
+              "duration": 121411792
             }
           },
           {
@@ -1447,7 +1447,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 28460101
+              "duration": 13946052
             }
           },
           {
@@ -1455,7 +1455,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 710568432
+              "duration": 1204540664
             }
           }
         ],
@@ -1483,7 +1483,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1676621711
+              "duration": 2085883408
             }
           },
           {
@@ -1496,7 +1496,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1672923043
+              "duration": 1187401666
             }
           },
           {
@@ -1509,7 +1509,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 555635789
+              "duration": 503465116
             }
           },
           {
@@ -1522,7 +1522,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 286804
+              "duration": 351538
             }
           },
           {
@@ -1535,7 +1535,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1486613383
+              "duration": 1425874280
             }
           },
           {
@@ -1548,7 +1548,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 391386714
+              "duration": 439733447
             }
           },
           {
@@ -1556,7 +1556,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 433429759
+              "duration": 452784285
             }
           }
         ],
@@ -1595,7 +1595,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1983052572
+              "duration": 2161859587
             }
           },
           {
@@ -1608,7 +1608,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 863300600
+              "duration": 893191900
             }
           },
           {
@@ -1621,7 +1621,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1021611191
+              "duration": 1206580393
             }
           },
           {
@@ -1634,7 +1634,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 304754
+              "duration": 789934
             }
           },
           {
@@ -1647,7 +1647,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2134499928
+              "duration": 2210833729
             }
           },
           {
@@ -1660,7 +1660,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 15744099
+              "duration": 33642752
             }
           },
           {
@@ -1673,7 +1673,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 14316260
+              "duration": 25398018
             }
           },
           {
@@ -1686,7 +1686,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 12164250
+              "duration": 43749596
             }
           },
           {
@@ -1699,7 +1699,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 317713330
+              "duration": 353799838
             }
           },
           {
@@ -1712,7 +1712,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 65797300
+              "duration": 102485820
             }
           },
           {
@@ -1720,7 +1720,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 864033421
+              "duration": 747422704
             }
           }
         ],
@@ -1749,17 +1749,17 @@
     "elements": [
       {
         "description": "",
-        "id": "as-a-user-i-can-interact-with-radio-buttons;as-a-user-i-can-interact-and-assert-on-radio-buttons",
+        "id": "as-a-user-i-can-interact-with-page-alerts;as-a-user-i-can-interact-and-assert-on-page-alerts",
         "keyword": "Scenario",
         "line": 4,
-        "name": "As a user I can interact and assert on radio buttons",
+        "name": "As a user I can interact and assert on page alerts",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1572232637
+              "duration": 2038293226
             }
           },
           {
@@ -1772,7 +1772,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 808815781
+              "duration": 927700202
             }
           },
           {
@@ -1785,7 +1785,145 @@
             },
             "result": {
               "status": "passed",
-              "duration": 186725806
+              "duration": 1106505757
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I am directed to the \"playground\" page",
+            "match": {
+              "location": "src/step-definitions/navigation.ts:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1066680
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "the \"error alert\" should contain the text \"This is an error alert — check it out!\"",
+            "match": {
+              "location": "src/step-definitions/assertions/verify-element-value.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1312523499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "the \"warning alert\" should contain the text \"This is a warning alert — check it out!\"",
+            "match": {
+              "location": "src/step-definitions/assertions/verify-element-value.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 696621900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "the \"info alert\" should contain the text \"This is an info alert — check it out!\"",
+            "match": {
+              "location": "src/step-definitions/assertions/verify-element-value.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 19124922
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "the \"success alert\" should contain the text \"This is a success alert — check it out!\"",
+            "match": {
+              "location": "src/step-definitions/assertions/verify-element-value.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 15018328
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 542063521
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 3
+          },
+          {
+            "name": "@regression",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "as-a-user-i-can-interact-with-page-alerts",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "As a user I can interact with page alerts",
+    "tags": [],
+    "uri": "src/features/playground/page-alerts.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "as-a-user-i-can-interact-with-radio-buttons;as-a-user-i-can-interact-and-assert-on-radio-buttons",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "As a user I can interact and assert on radio buttons",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1599142962
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I am on the \"home\" page",
+            "match": {
+              "location": "src/step-definitions/navigation.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 831443058
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "I click the \"playground\" button",
+            "match": {
+              "location": "src/step-definitions/click.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 857075268
             }
           },
           {
@@ -1798,7 +1936,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 384113
+              "duration": 359083
             }
           },
           {
@@ -1811,7 +1949,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1639627501
+              "duration": 1388794684
             }
           },
           {
@@ -1824,7 +1962,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 472118129
+              "duration": 50666213
             }
           },
           {
@@ -1837,7 +1975,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 65324465
+              "duration": 31270313
             }
           },
           {
@@ -1850,7 +1988,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 139830359
+              "duration": 22157266
             }
           },
           {
@@ -1863,7 +2001,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 244586561
+              "duration": 352015209
             }
           },
           {
@@ -1876,7 +2014,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 16763836
+              "duration": 239764059
             }
           },
           {
@@ -1889,7 +2027,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 26554399
+              "duration": 18240769
             }
           },
           {
@@ -1902,7 +2040,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 18647439
+              "duration": 10963152
             }
           },
           {
@@ -1915,7 +2053,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 246821254
+              "duration": 195916138
             }
           },
           {
@@ -1928,7 +2066,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 13718626
+              "duration": 18982256
             }
           },
           {
@@ -1941,7 +2079,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 14396338
+              "duration": 136268836
             }
           },
           {
@@ -1949,7 +2087,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 379893509
+              "duration": 912212354
             }
           }
         ],
@@ -1988,7 +2126,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1915916416
+              "duration": 1548569308
             }
           },
           {
@@ -2001,7 +2139,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 819672553
+              "duration": 936805006
             }
           },
           {
@@ -2014,7 +2152,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 948765212
+              "duration": 338092790
             }
           },
           {
@@ -2027,7 +2165,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 745236
+              "duration": 636138
             }
           },
           {
@@ -2040,7 +2178,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1524841221
+              "duration": 2019492131
             }
           },
           {
@@ -2053,7 +2191,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 759948827
+              "duration": 762352730
             }
           },
           {
@@ -2066,7 +2204,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 19030465
+              "duration": 63434010
             }
           },
           {
@@ -2079,7 +2217,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 180680816
+              "duration": 249919829
             }
           },
           {
@@ -2092,7 +2230,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 18559139
+              "duration": 49769992
             }
           },
           {
@@ -2105,7 +2243,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 13944062
+              "duration": 43185901
             }
           },
           {
@@ -2113,7 +2251,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 323891757
+              "duration": 562713765
             }
           }
         ],
@@ -2142,516 +2280,6 @@
     "elements": [
       {
         "description": "",
-        "id": "as-a-user-i-can-interact-with-tabs;as-a-user-i-can-interact-and-assert-on-new-tabs",
-        "keyword": "Scenario",
-        "line": 4,
-        "name": "As a user I can interact and assert on new tabs",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 1693521215
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 5,
-            "name": "I am on the \"home\" page",
-            "match": {
-              "location": "src/step-definitions/navigation.ts:7"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1079153274
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 6,
-            "name": "I click the \"playground\" button",
-            "match": {
-              "location": "src/step-definitions/click.ts:8"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 548737952
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 7,
-            "name": "I am directed to the \"playground\" page",
-            "match": {
-              "location": "src/step-definitions/navigation.ts:22"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 251775
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 8,
-            "name": "I click the \"new tab\" button",
-            "match": {
-              "location": "src/step-definitions/click.ts:8"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2240131642
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 9,
-            "name": "the \"2nd\" tab should contain the title \"Contacts\"",
-            "match": {
-              "location": "src/step-definitions/assertions/verify-new-page.ts:8"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1072137378
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 10,
-            "name": "the \"1st\" tab should contain the title \"Playground\"",
-            "match": {
-              "location": "src/step-definitions/assertions/verify-new-page.ts:8"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1005456146
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 11,
-            "name": "I fill in the \"search\" input on the \"2nd\" tab with \"Sloane Juarez\"",
-            "match": {
-              "location": "src/step-definitions/page.ts:8"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 132162953
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 12,
-            "name": "the \"contact\" on the \"2nd\" tab should be displayed",
-            "match": {
-              "location": "src/step-definitions/assertions/verify-new-page.ts:28"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 12819166
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 14,
-            "name": "the \"full name label\" on the \"2nd\" tab should contain the text \"Name:\"",
-            "match": {
-              "location": "src/step-definitions/assertions/verify-new-page.ts:48"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 18555979
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 15,
-            "name": "the \"name\" on the \"2nd\" tab should equal the text \"Sloane Juarez\"",
-            "match": {
-              "location": "src/step-definitions/assertions/verify-new-page.ts:68"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 37796556
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 16,
-            "name": "the \"gender label\" on the \"2nd\" tab should contain the text \"Gender:\"",
-            "match": {
-              "location": "src/step-definitions/assertions/verify-new-page.ts:48"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 8164854
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 17,
-            "name": "the \"gender\" on the \"2nd\" tab should equal the text \"Female\"",
-            "match": {
-              "location": "src/step-definitions/assertions/verify-new-page.ts:68"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 11141976
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 18,
-            "name": "the \"address label\" on the \"2nd\" tab should contain the text \"Address:\"",
-            "match": {
-              "location": "src/step-definitions/assertions/verify-new-page.ts:48"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 17881210
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 19,
-            "name": "the \"address\" on the \"2nd\" tab should equal the text \"8162 Tincidunt Rd., Ludhiana\"",
-            "match": {
-              "location": "src/step-definitions/assertions/verify-new-page.ts:68"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 7665512
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 20,
-            "name": "the \"edit\" on the \"2nd\" tab should be displayed",
-            "match": {
-              "location": "src/step-definitions/assertions/verify-new-page.ts:28"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 7517220
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 21,
-            "name": "the \"delete\" on the \"2nd\" tab should be displayed",
-            "match": {
-              "location": "src/step-definitions/assertions/verify-new-page.ts:28"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 5040630
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 504145434
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@smoke",
-            "line": 3
-          },
-          {
-            "name": "@regression",
-            "line": 3
-          }
-        ],
-        "type": "scenario"
-      }
-    ],
-    "id": "as-a-user-i-can-interact-with-tabs",
-    "line": 1,
-    "keyword": "Feature",
-    "name": "As a user I can interact with tabs",
-    "tags": [],
-    "uri": "src/features/playground/tabs.feature"
-  },
-  {
-    "description": "",
-    "elements": [
-      {
-        "description": "",
-        "id": "as-a-user-i-can-interact-with-windows;as-a-user-i-can-interact-and-assert-on-new-windows",
-        "keyword": "Scenario",
-        "line": 4,
-        "name": "As a user I can interact and assert on new windows",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 1618192425
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 5,
-            "name": "I am on the \"home\" page",
-            "match": {
-              "location": "src/step-definitions/navigation.ts:7"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 882595497
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 6,
-            "name": "I click the \"playground\" button",
-            "match": {
-              "location": "src/step-definitions/click.ts:8"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 970676477
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 7,
-            "name": "I am directed to the \"playground\" page",
-            "match": {
-              "location": "src/step-definitions/navigation.ts:22"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 237256
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 8,
-            "name": "I click the \"open window\" button",
-            "match": {
-              "location": "src/step-definitions/click.ts:8"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1603525316
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 9,
-            "name": "the \"2nd\" window should contain the title \"Contacts\"",
-            "match": {
-              "location": "src/step-definitions/assertions/verify-new-page.ts:8"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1009382097
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 10,
-            "name": "the \"1st\" window should contain the title \"Playground\"",
-            "match": {
-              "location": "src/step-definitions/assertions/verify-new-page.ts:8"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1005734568
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 11,
-            "name": "I fill in the \"search\" input on the \"2nd\" window with \"Sloane Juarez\"",
-            "match": {
-              "location": "src/step-definitions/page.ts:8"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 77164268
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 12,
-            "name": "the \"contact\" on the \"2nd\" window should be displayed",
-            "match": {
-              "location": "src/step-definitions/assertions/verify-new-page.ts:28"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 10226007
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 13,
-            "name": "the \"full name label\" on the \"2nd\" window should contain the text \"Name:\"",
-            "match": {
-              "location": "src/step-definitions/assertions/verify-new-page.ts:48"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 9443820
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 14,
-            "name": "the \"name\" on the \"2nd\" window should equal the text \"Sloane Juarez\"",
-            "match": {
-              "location": "src/step-definitions/assertions/verify-new-page.ts:68"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 8753406
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 15,
-            "name": "the \"gender label\" on the \"2nd\" window should contain the text \"Gender:\"",
-            "match": {
-              "location": "src/step-definitions/assertions/verify-new-page.ts:48"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 7362787
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 16,
-            "name": "the \"gender\" on the \"2nd\" window should equal the text \"Female\"",
-            "match": {
-              "location": "src/step-definitions/assertions/verify-new-page.ts:68"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 10547793
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 17,
-            "name": "the \"address label\" on the \"2nd\" window should contain the text \"Address:\"",
-            "match": {
-              "location": "src/step-definitions/assertions/verify-new-page.ts:48"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 8021689
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 18,
-            "name": "the \"address\" on the \"2nd\" window should equal the text \"8162 Tincidunt Rd., Ludhiana\"",
-            "match": {
-              "location": "src/step-definitions/assertions/verify-new-page.ts:68"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 8651357
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 19,
-            "name": "the \"edit\" on the \"2nd\" window should be displayed",
-            "match": {
-              "location": "src/step-definitions/assertions/verify-new-page.ts:28"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 7930482
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 20,
-            "name": "the \"delete\" on the \"2nd\" window should be displayed",
-            "match": {
-              "location": "src/step-definitions/assertions/verify-new-page.ts:28"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 6552531
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 503424645
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@smoke",
-            "line": 3
-          },
-          {
-            "name": "@regression",
-            "line": 3
-          }
-        ],
-        "type": "scenario"
-      }
-    ],
-    "id": "as-a-user-i-can-interact-with-windows",
-    "line": 1,
-    "keyword": "Feature",
-    "name": "As a user I can interact with windows",
-    "tags": [],
-    "uri": "src/features/playground/windows.feature"
-  },
-  {
-    "description": "",
-    "elements": [
-      {
-        "description": "",
         "id": "as-a-user-i-can-interact-with-tables;as-a-user-i-can-interact-and-assert-on-tables",
         "keyword": "Scenario",
         "line": 4,
@@ -2662,7 +2290,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1180249059
+              "duration": 1595240602
             }
           },
           {
@@ -2675,7 +2303,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 886795575
+              "duration": 1115437164
             }
           },
           {
@@ -2688,7 +2316,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 218762182
+              "duration": 170880822
             }
           },
           {
@@ -2701,7 +2329,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 309825
+              "duration": 398226
             }
           },
           {
@@ -2759,7 +2387,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 959934376
+              "duration": 1683324442
             }
           },
           {
@@ -2817,7 +2445,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 30709525
+              "duration": 440701452
             }
           },
           {
@@ -2825,7 +2453,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 349800943
+              "duration": 533102326
             }
           }
         ],
@@ -2848,5 +2476,631 @@
     "name": "As a user I can interact with tables",
     "tags": [],
     "uri": "src/features/playground/tables.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "as-a-user-i-can-interact-with-tabs;as-a-user-i-can-interact-and-assert-on-new-tabs",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "As a user I can interact and assert on new tabs",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1584700566
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I am on the \"home\" page",
+            "match": {
+              "location": "src/step-definitions/navigation.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 742704290
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "I click the \"playground\" button",
+            "match": {
+              "location": "src/step-definitions/click.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 656531661
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I am directed to the \"playground\" page",
+            "match": {
+              "location": "src/step-definitions/navigation.ts:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 484542
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I click the \"new tab\" button",
+            "match": {
+              "location": "src/step-definitions/click.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2087833878
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "the \"2nd\" tab should contain the title \"Contacts\"",
+            "match": {
+              "location": "src/step-definitions/assertions/verify-new-page.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1140036617
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "the \"1st\" tab should contain the title \"Playground\"",
+            "match": {
+              "location": "src/step-definitions/assertions/verify-new-page.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1006992919
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "I fill in the \"search\" input on the \"2nd\" tab with \"Sloane Juarez\"",
+            "match": {
+              "location": "src/step-definitions/page.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 424597558
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "the \"contact\" on the \"2nd\" tab should be displayed",
+            "match": {
+              "location": "src/step-definitions/assertions/verify-new-page.ts:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 88647555
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "the \"full name label\" on the \"2nd\" tab should contain the text \"Name:\"",
+            "match": {
+              "location": "src/step-definitions/assertions/verify-new-page.ts:48"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 58051379
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "the \"name\" on the \"2nd\" tab should equal the text \"Sloane Juarez\"",
+            "match": {
+              "location": "src/step-definitions/assertions/verify-new-page.ts:68"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 13450756
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "the \"gender label\" on the \"2nd\" tab should contain the text \"Gender:\"",
+            "match": {
+              "location": "src/step-definitions/assertions/verify-new-page.ts:48"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 15601271
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "the \"gender\" on the \"2nd\" tab should equal the text \"Female\"",
+            "match": {
+              "location": "src/step-definitions/assertions/verify-new-page.ts:68"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 31481331
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "the \"address label\" on the \"2nd\" tab should contain the text \"Address:\"",
+            "match": {
+              "location": "src/step-definitions/assertions/verify-new-page.ts:48"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 16787430
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "the \"address\" on the \"2nd\" tab should equal the text \"8162 Tincidunt Rd., Ludhiana\"",
+            "match": {
+              "location": "src/step-definitions/assertions/verify-new-page.ts:68"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 14299509
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "the \"edit\" on the \"2nd\" tab should be displayed",
+            "match": {
+              "location": "src/step-definitions/assertions/verify-new-page.ts:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7857725
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 21,
+            "name": "the \"delete\" on the \"2nd\" tab should be displayed",
+            "match": {
+              "location": "src/step-definitions/assertions/verify-new-page.ts:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8656476
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 457131722
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 3
+          },
+          {
+            "name": "@regression",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "as-a-user-i-can-interact-with-tabs",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "As a user I can interact with tabs",
+    "tags": [],
+    "uri": "src/features/playground/tabs.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "as-a-user-i-can-interact-with-tooltips;as-a-user-i-can-interact-and-assert-on-tooltips",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "As a user I can interact and assert on tooltips",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1744688410
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I am on the \"home\" page",
+            "match": {
+              "location": "src/step-definitions/navigation.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1088182706
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "I click the \"playground\" button",
+            "match": {
+              "location": "src/step-definitions/click.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 267322544
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I am directed to the \"playground\" page",
+            "match": {
+              "location": "src/step-definitions/navigation.ts:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 345000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "the \"tooltip\" \"title\" attribute should contain the text \"This is a tooltip\"",
+            "match": {
+              "location": "src/step-definitions/assertions/verify-element-value.ts:118"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2961039878
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "the \"tooltip\" \"title\" attribute should not contain the text \"This is not a tooltip\"",
+            "match": {
+              "location": "src/step-definitions/assertions/verify-element-value.ts:118"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 53790203
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 557212149
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@dev",
+            "line": 3
+          },
+          {
+            "name": "@smoke",
+            "line": 3
+          },
+          {
+            "name": "@regression",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "as-a-user-i-can-interact-with-tooltips",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "As a user I can interact with tooltips",
+    "tags": [],
+    "uri": "src/features/playground/tooltips.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "as-a-user-i-can-interact-with-windows;as-a-user-i-can-interact-and-assert-on-new-windows",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "As a user I can interact and assert on new windows",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1847741603
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I am on the \"home\" page",
+            "match": {
+              "location": "src/step-definitions/navigation.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1088137258
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "I click the \"playground\" button",
+            "match": {
+              "location": "src/step-definitions/click.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 374264086
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I am directed to the \"playground\" page",
+            "match": {
+              "location": "src/step-definitions/navigation.ts:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 585200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I click the \"open window\" button",
+            "match": {
+              "location": "src/step-definitions/click.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3445463546
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "the \"2nd\" window should contain the title \"Contacts\"",
+            "match": {
+              "location": "src/step-definitions/assertions/verify-new-page.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1012306278
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "the \"1st\" window should contain the title \"Playground\"",
+            "match": {
+              "location": "src/step-definitions/assertions/verify-new-page.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1005198170
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "I fill in the \"search\" input on the \"2nd\" window with \"Sloane Juarez\"",
+            "match": {
+              "location": "src/step-definitions/page.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 74947003
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "the \"contact\" on the \"2nd\" window should be displayed",
+            "match": {
+              "location": "src/step-definitions/assertions/verify-new-page.ts:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 11505595
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "the \"full name label\" on the \"2nd\" window should contain the text \"Name:\"",
+            "match": {
+              "location": "src/step-definitions/assertions/verify-new-page.ts:48"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 11319361
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "the \"name\" on the \"2nd\" window should equal the text \"Sloane Juarez\"",
+            "match": {
+              "location": "src/step-definitions/assertions/verify-new-page.ts:68"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9522243
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "the \"gender label\" on the \"2nd\" window should contain the text \"Gender:\"",
+            "match": {
+              "location": "src/step-definitions/assertions/verify-new-page.ts:48"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 11786666
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "the \"gender\" on the \"2nd\" window should equal the text \"Female\"",
+            "match": {
+              "location": "src/step-definitions/assertions/verify-new-page.ts:68"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9343959
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "the \"address label\" on the \"2nd\" window should contain the text \"Address:\"",
+            "match": {
+              "location": "src/step-definitions/assertions/verify-new-page.ts:48"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8899316
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "the \"address\" on the \"2nd\" window should equal the text \"8162 Tincidunt Rd., Ludhiana\"",
+            "match": {
+              "location": "src/step-definitions/assertions/verify-new-page.ts:68"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10207335
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "the \"edit\" on the \"2nd\" window should be displayed",
+            "match": {
+              "location": "src/step-definitions/assertions/verify-new-page.ts:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7297960
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "the \"delete\" on the \"2nd\" window should be displayed",
+            "match": {
+              "location": "src/step-definitions/assertions/verify-new-page.ts:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 30818779
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 316191745
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 3
+          },
+          {
+            "name": "@regression",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "as-a-user-i-can-interact-with-windows",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "As a user I can interact with windows",
+    "tags": [],
+    "uri": "src/features/playground/windows.feature"
   }
 ]
