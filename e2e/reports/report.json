@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1190410261
+              "duration": 1674011146
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 922972589
+              "duration": 914526123
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 225250985
+              "duration": 169948479
             }
           },
           {
@@ -53,7 +53,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1724452
+              "duration": 1906523
             }
           },
           {
@@ -66,7 +66,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 747705085
+              "duration": 1106500769
             }
           },
           {
@@ -79,7 +79,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 413529569
+              "duration": 137584064
             }
           },
           {
@@ -92,7 +92,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 9458243
+              "duration": 46784686
             }
           },
           {
@@ -105,7 +105,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 164981654
+              "duration": 156937819
             }
           },
           {
@@ -118,7 +118,20 @@
             },
             "result": {
               "status": "passed",
-              "duration": 10484154
+              "duration": 11760277
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "the \"switch two\" switch should not be enabled",
+            "match": {
+              "location": "src/step-definitions/assertions/verify-element-value.ts:81"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 22216886
             }
           },
           {
@@ -126,7 +139,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 352456876
+              "duration": 345696912
             }
           }
         ],
