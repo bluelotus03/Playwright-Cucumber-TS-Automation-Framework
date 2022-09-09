@@ -1,6 +1,6 @@
 Feature: As a user I can interact with buttons
 
-    @smoke @regression
+    @dev @smoke @regression
     Scenario: As a user I can interact and assert on buttons
         Given I am on the "home" page
         And I click the "playground" button

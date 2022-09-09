@@ -5,7 +5,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.smoke = exports.regression = exports.dev = void 0;
+exports.smoke = exports.regression = exports.environment = exports.dev = void 0;
 
 var _dotenv = _interopRequireDefault(require("dotenv"));
 
@@ -25,8 +25,15 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
+var environment = (0, _parseEnv.env)('NODE_ENV');
+exports.environment = environment;
+
 _dotenv.default.config({
   path: (0, _parseEnv.env)('COMMON_CONFIG_FILE')
+});
+
+_dotenv.default.config({
+  path: "".concat((0, _parseEnv.env)('ENV_PATH')).concat(environment, ".env")
 });
 
 var hostsConfig = (0, _parseEnv.getJsonFromFile)((0, _parseEnv.env)('HOSTS_URL_PATH'));

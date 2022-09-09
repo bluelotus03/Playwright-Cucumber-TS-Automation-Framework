@@ -3,7 +3,10 @@ import { env, getJsonFromFile } from './env/parseEnv';
 import { GlobalConfig, HostsConfig, PagesConfig, PageElementMappings, } from './env/global';
 import * as fs from "fs";
 
+const environment = env('NODE_ENV');
+
 dotenv.config( { path: env('COMMON_CONFIG_FILE')});
+dotenv.config( { path: `${env('ENV_PATH')}${environment}.env`});
 
 const hostsConfig: HostsConfig = getJsonFromFile(env('HOSTS_URL_PATH'));
 const pagesConfig: PagesConfig = getJsonFromFile(env('PAGES_URL_PATH'));
@@ -38,4 +41,4 @@ const dev = `${common} --tags '@dev'`;
 const smoke = `${common} --tags '@smoke'`;
 const regression = `${common} --tags '@regression'`;
 
-export { dev, smoke, regression };
+export { dev, smoke, regression, environment };
