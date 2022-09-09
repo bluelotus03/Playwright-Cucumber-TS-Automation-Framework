@@ -17,7 +17,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
       while (1) {
         switch (_context2.prev = _context2.next) {
           case 0:
-            page = this.screen.page, globalConfig = this.globalConfig; //console.log(`the ${elementKey} should ${negate?'not ':''}equal the ${globalVariables[variableKey]} stored in global variables`);
+            page = this.screen.page, globalConfig = this.globalConfig; //console.log(`the ${elementKey} should ${negate?'not ':''}equal ${globalVariables[variableKey]} stored in global variables`);
 
             elementIdentifier = (0, _webElementHelper.getElementLocator)(page, elementKey, globalConfig);
             _context2.next = 4;
@@ -51,5 +51,48 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
   return function (_x, _x2, _x3, _x4) {
     return _ref.apply(this, arguments);
+  };
+}());
+(0, _cucumber.Then)(/^the "([^"]*)" should( not)? contain the "([^"]*)" stored in global variables$/, /*#__PURE__*/function () {
+  var _ref3 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee4(elementKey, negate, variableKey) {
+    var page, globalConfig, elementIdentifier;
+    return regeneratorRuntime.wrap(function _callee4$(_context4) {
+      while (1) {
+        switch (_context4.prev = _context4.next) {
+          case 0:
+            page = this.screen.page, globalConfig = this.globalConfig; //console.log(`the ${elementKey} should ${negate?'not ':''}contain the ${globalVariables[variableKey]} stored in global variables`);
+
+            elementIdentifier = (0, _webElementHelper.getElementLocator)(page, elementKey, globalConfig);
+            _context4.next = 4;
+            return (0, _waitForBehavior.waitFor)( /*#__PURE__*/_asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee3() {
+              var elementText;
+              return regeneratorRuntime.wrap(function _callee3$(_context3) {
+                while (1) {
+                  switch (_context3.prev = _context3.next) {
+                    case 0:
+                      _context3.next = 2;
+                      return page.textContent(elementIdentifier);
+
+                    case 2:
+                      elementText = _context3.sent;
+
+                    case 3:
+                    case "end":
+                      return _context3.stop();
+                  }
+                }
+              }, _callee3);
+            })));
+
+          case 4:
+          case "end":
+            return _context4.stop();
+        }
+      }
+    }, _callee4, this);
+  }));
+
+  return function (_x5, _x6, _x7, _x8) {
+    return _ref3.apply(this, arguments);
   };
 }());
