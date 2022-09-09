@@ -4,17 +4,17 @@
     "elements": [
       {
         "description": "",
-        "id": "as-a-user-i-can-interact-with-avatars;as-a-user-i-can-interact-and-assert-on-avatars",
+        "id": "as-a-user-i-can-interact-with-select-boxes;as-a-user-i-can-interact-and-assert-on-select-boxes",
         "keyword": "Scenario",
         "line": 5,
-        "name": "As a user I can interact and assert on avatars",
+        "name": "As a user I can interact and assert on select boxes",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1338930917
+              "duration": 1796467131
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 986620151
+              "duration": 958022591
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 225562988
+              "duration": 229263557
             }
           },
           {
@@ -53,59 +53,85 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2436645
+              "duration": 4248533
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 9,
-            "name": "the \"1st\" \"avatar\" should be displayed",
+            "name": "I select the \"10\" option from the \"age\"",
             "match": {
-              "location": "src/step-definitions/assertions/verify-element-visibility.ts:26"
+              "location": "src/step-definitions/form.ts:35"
             },
             "result": {
               "status": "passed",
-              "duration": 804875410
+              "duration": 1242104161
             }
           },
           {
             "arguments": [],
-            "keyword": "And ",
+            "keyword": "Then ",
             "line": 10,
-            "name": "the \"2nd\" \"avatar\" should be displayed",
+            "name": "the \"age\" should contain the value \"10\"",
             "match": {
-              "location": "src/step-definitions/assertions/verify-element-visibility.ts:26"
+              "location": "src/step-definitions/assertions/verify-element-value.ts:45"
             },
             "result": {
               "status": "passed",
-              "duration": 381811368
+              "duration": 13838629
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 11,
-            "name": "the \"small avatar\" should be displayed",
+            "name": "I select the \"20\" option from the \"age\"",
             "match": {
-              "location": "src/step-definitions/assertions/verify-element-visibility.ts:8"
+              "location": "src/step-definitions/form.ts:35"
             },
             "result": {
               "status": "passed",
-              "duration": 10768624
+              "duration": 38978715
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "the \"age\" should contain the value \"20\"",
+            "match": {
+              "location": "src/step-definitions/assertions/verify-element-value.ts:45"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7232191
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 12,
-            "name": "I should see \"2\" \"avatar\" displayed",
+            "line": 13,
+            "name": "I select the \"30\" option from the \"age\"",
             "match": {
-              "location": "src/step-definitions/assertions/verify-element-visibility.ts:45"
+              "location": "src/step-definitions/form.ts:35"
             },
             "result": {
               "status": "passed",
-              "duration": 14242556
+              "duration": 57121417
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "the \"age\" should contain the value \"30\"",
+            "match": {
+              "location": "src/step-definitions/assertions/verify-element-value.ts:45"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 11226139
             }
           },
           {
@@ -113,7 +139,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 396474733
+              "duration": 322360065
             }
           }
         ],
@@ -134,11 +160,11 @@
         "type": "scenario"
       }
     ],
-    "id": "as-a-user-i-can-interact-with-avatars",
+    "id": "as-a-user-i-can-interact-with-select-boxes",
     "line": 1,
     "keyword": "Feature",
-    "name": "As a user I can interact with avatars",
+    "name": "As a user I can interact with select boxes",
     "tags": [],
-    "uri": "src/features/playground/avatars.feature"
+    "uri": "src/features/playground/select-boxes.feature"
   }
 ]
