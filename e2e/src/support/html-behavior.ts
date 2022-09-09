@@ -56,6 +56,7 @@ export const getValue = async (
     page: Page,
     elementIdentifier: ElementLocator,
 ): Promise<string | null> => {
+    await page.waitForSelector(elementIdentifier);
     const value = await page.$eval<string, HTMLSelectElement>(elementIdentifier, el => {
         return el.value;
     })
@@ -98,4 +99,12 @@ export const inputValueOnPage = async (
 ): Promise<void> => {
     await pages[pageIndex].focus(elementIdentifier);
     await pages[pageIndex].fill(elementIdentifier, inputValue);
+};
+
+export const scrollIntoView = async (
+    page: Page,
+    elementIdentifier: ElementLocator,
+): Promise<void> => {
+    const element = page.locator(elementIdentifier);
+    await element.scrollIntoViewIfNeeded();
 };

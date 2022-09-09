@@ -18,6 +18,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
           case 0:
             console.log("Running cucumber scenario ".concat(scenario.pickle.name));
             contextOptions = {
+              ignoreHTTPSErrors: true,
               recordVideo: {
                 dir: "".concat((0, _parseEnv.env)('VIDEO_PATH')).concat(scenario.pickle.name)
               }
