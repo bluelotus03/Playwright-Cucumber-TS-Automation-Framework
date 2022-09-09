@@ -4,35 +4,48 @@
     "elements": [
       {
         "description": "",
-        "id": "as-a-user-i-can-interact-with-select-boxes;as-a-user-i-can-interact-and-assert-on-select-boxes",
+        "id": "as-a-user-i-can-refresh-the-browser-and-see-the-application;as-a-user-i-can-refresh-the-browser-and-be-on-the-page-expected",
         "keyword": "Scenario",
-        "line": 5,
-        "name": "As a user I can interact and assert on select boxes",
+        "line": 4,
+        "name": "As a user I can refresh the browser and be on the page expected",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1796467131
+              "duration": 2886130264
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 6,
+            "line": 5,
             "name": "I am on the \"home\" page",
             "match": {
               "location": "src/step-definitions/navigation.ts:7"
             },
             "result": {
               "status": "passed",
-              "duration": 958022591
+              "duration": 1028581476
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
+            "line": 6,
+            "name": "I refresh the \"home\" page",
+            "match": {
+              "location": "src/step-definitions/navigation.ts:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 650037114
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
             "line": 7,
             "name": "I click the \"playground\" button",
             "match": {
@@ -40,12 +53,12 @@
             },
             "result": {
               "status": "passed",
-              "duration": 229263557
+              "duration": 179612738
             }
           },
           {
             "arguments": [],
-            "keyword": "When ",
+            "keyword": "And ",
             "line": 8,
             "name": "I am directed to the \"playground\" page",
             "match": {
@@ -53,85 +66,20 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4248533
+              "duration": 2530501
             }
           },
           {
             "arguments": [],
-            "keyword": "And ",
+            "keyword": "Then ",
             "line": 9,
-            "name": "I select the \"10\" option from the \"age\"",
+            "name": "I refresh the \"playground\" page",
             "match": {
-              "location": "src/step-definitions/form.ts:35"
+              "location": "src/step-definitions/navigation.ts:35"
             },
             "result": {
               "status": "passed",
-              "duration": 1242104161
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 10,
-            "name": "the \"age\" should contain the value \"10\"",
-            "match": {
-              "location": "src/step-definitions/assertions/verify-element-value.ts:45"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 13838629
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 11,
-            "name": "I select the \"20\" option from the \"age\"",
-            "match": {
-              "location": "src/step-definitions/form.ts:35"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 38978715
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 12,
-            "name": "the \"age\" should contain the value \"20\"",
-            "match": {
-              "location": "src/step-definitions/assertions/verify-element-value.ts:45"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 7232191
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 13,
-            "name": "I select the \"30\" option from the \"age\"",
-            "match": {
-              "location": "src/step-definitions/form.ts:35"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 57121417
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 14,
-            "name": "the \"age\" should contain the value \"30\"",
-            "match": {
-              "location": "src/step-definitions/assertions/verify-element-value.ts:45"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 11226139
+              "duration": 996423204
             }
           },
           {
@@ -139,32 +87,32 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 322360065
+              "duration": 406276578
             }
           }
         ],
         "tags": [
           {
             "name": "@dev",
-            "line": 4
+            "line": 3
           },
           {
             "name": "@smoke",
-            "line": 4
+            "line": 3
           },
           {
             "name": "@regression",
-            "line": 4
+            "line": 3
           }
         ],
         "type": "scenario"
       }
     ],
-    "id": "as-a-user-i-can-interact-with-select-boxes",
+    "id": "as-a-user-i-can-refresh-the-browser-and-see-the-application",
     "line": 1,
     "keyword": "Feature",
-    "name": "As a user I can interact with select boxes",
+    "name": "As a user I can refresh the browser and see the application",
     "tags": [],
-    "uri": "src/features/playground/select-boxes.feature"
+    "uri": "src/features/playground/page-refresh.feature"
   }
 ]
