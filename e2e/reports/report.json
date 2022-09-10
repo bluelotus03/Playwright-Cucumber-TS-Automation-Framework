@@ -13,9 +13,8 @@
             "keyword": "Before",
             "hidden": true,
             "result": {
-              "status": "failed",
-              "duration": 542816958,
-              "error_message": "browserContext.newPage: Protocol error (Emulation.setDeviceMetricsOverride): Invalid parameters Failed to deserialize params.width - BINDINGS: int32 value expected at position 22\n    at ScenarioWorld.<anonymous> (/Users/bluelotus03/Desktop/Playwright-Cucumber-TS-Automation-Framework/e2e/src/step-definitions/setup/world.ts:32:36)\n    at fulfilled (/Users/bluelotus03/Desktop/Playwright-Cucumber-TS-Automation-Framework/e2e/src/step-definitions/setup/world.ts:5:58)"
+              "status": "passed",
+              "duration": 825781208
             }
           },
           {
@@ -27,8 +26,8 @@
               "location": "src/step-definitions/navigation.ts:7"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 324579124
             }
           },
           {
@@ -40,8 +39,8 @@
               "location": "src/step-definitions/click.ts:8"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 77964959
             }
           },
           {
@@ -53,8 +52,8 @@
               "location": "src/step-definitions/navigation.ts:22"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 993458
             }
           },
           {
@@ -66,8 +65,8 @@
               "location": "src/step-definitions/form.ts:10"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 274743416
             }
           },
           {
@@ -79,8 +78,8 @@
               "location": "src/step-definitions/form.ts:10"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 17221000
             }
           },
           {
@@ -92,8 +91,8 @@
               "location": "src/step-definitions/assertions/verify-element-value.ts:45"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 20539958
             }
           },
           {
@@ -105,17 +104,16 @@
               "location": "src/step-definitions/assertions/verify-element-value.ts:45"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 19054541
             }
           },
           {
             "keyword": "After",
             "hidden": true,
             "result": {
-              "status": "failed",
-              "duration": 114375,
-              "error_message": "TypeError: Cannot read properties of undefined (reading 'page')\n    at ScenarioWorld.<anonymous> (/Users/bluelotus03/Desktop/Playwright-Cucumber-TS-Automation-Framework/e2e/src/step-definitions/setup/hooks.ts:26:19)\n    at Generator.next (<anonymous>)\n    at /Users/bluelotus03/Desktop/Playwright-Cucumber-TS-Automation-Framework/e2e/src/step-definitions/setup/hooks.ts:8:71\n    at new Promise (<anonymous>)\n    at __awaiter (/Users/bluelotus03/Desktop/Playwright-Cucumber-TS-Automation-Framework/e2e/src/step-definitions/setup/hooks.ts:4:12)\n    at ScenarioWorld.<anonymous> (/Users/bluelotus03/Desktop/Playwright-Cucumber-TS-Automation-Framework/e2e/src/step-definitions/setup/hooks.ts:32:12)"
+              "status": "passed",
+              "duration": 187936500
             }
           }
         ],
