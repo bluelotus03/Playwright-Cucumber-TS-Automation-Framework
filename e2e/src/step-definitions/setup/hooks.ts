@@ -1,6 +1,8 @@
-import { Before, After, ITestCaseHookParameter, setDefaultTimeout } from '@cucumber/cucumber';
+import { Before, After, setDefaultTimeout } from '@cucumber/cucumber';
+import { getViewport } from '../../support/browser-behavior';
 import { ScenarioWorld } from './world';
 import { env, envNumber } from '../../env/parseEnv';
+
 
 setDefaultTimeout(envNumber('SCRIPT_TIMEOUT'));
 
@@ -8,6 +10,7 @@ Before( async function(this: ScenarioWorld, scenario) {
     console.log(`Running cucumber scenario ${scenario.pickle.name}`);
 
     const contextOptions = {
+        //viewport: getViewport(),
         ignoreHTTPSErrors: true, 
         recordVideo: {
             dir: `${env('VIDEO_PATH')}${scenario.pickle.name}`,

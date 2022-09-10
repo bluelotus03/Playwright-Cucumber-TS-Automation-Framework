@@ -279,7 +279,7 @@ pre {
           <a class="navbar-brand">Cucumberjs Report</a>
           <div class="project-name visible-md visible-lg">e2e</div>
           <div class="label-container">
-            <span class="label label-success" onclick="toggle('.feature-passed')" title=scenarios>Passed: 2</span>
+            <span class="label label-success" onclick="toggle('.feature-passed')" title=scenarios>Passed: 0</span>
             <span class="label label-danger" onclick="toggle('.feature-failed')" title=scenarios>Failed: 0</span>
           </div>
         </div>
@@ -288,7 +288,7 @@ pre {
 
     <div class="container">
 
-      <div class="generated-on">Sat Sep 10 2022 14:44:32 GMT-0400 (Eastern Daylight Time)</div>
+      <div class="generated-on">Sat Sep 10 2022 15:10:54 GMT-0400 (Eastern Daylight Time)</div>
 
       <div class="row">
         <div class="chart col-lg-6 col-md-6" id="piechart_features"></div>
@@ -313,23 +313,23 @@ pre {
                     <div class="tags">
                     </div>
                     
-                    <a data-toggle="collapse" href="#collapseFeaturee2e82fd20e2-e267-472c-9c98-5037c48d68f0">
+                    <a data-toggle="collapse" href="#collapseFeaturee2e1d3094d8-61bf-44e3-a8d8-c1d8e2a0fee0">
                         <i class="glyphicon glyphicon-chevron-right"></i>
                         <i class="glyphicon glyphicon-chevron-down"></i>
                         <b>Feature:</b>As a user I can interact with login forms
                         <span class="label-container">
-              <span class="label label-success"
-                                                         title="2 Scenarios Passed">2</span>
               
               
               
               
+              <span class="label label-warning"
+                                                          title="1 Scenarios Skipped">1</span>
               
                         </span>
                     </a>
                 </h4>
             </div>
-            <div id="collapseFeaturee2e82fd20e2-e267-472c-9c98-5037c48d68f0" class="panel-collapse collapse">
+            <div id="collapseFeaturee2e1d3094d8-61bf-44e3-a8d8-c1d8e2a0fee0" class="panel-collapse collapse">
                 <div class="panel-body">
                     
                     
@@ -342,24 +342,25 @@ pre {
                                 <div class="tags"> <span class="tag"> @dev</span>
                                      <span class="tag"> @smoke</span>
                                      <span class="tag"> @regression</span>
+                                     <span class="tag"> @localhost</span>
                                     
                                 </div>
                                 
-                                <a data-toggle="collapse" href="#collapseScenarioe2e15b6942b-6b90-4892-8863-e4899a8c6c69">
+                                <a data-toggle="collapse" href="#collapseScenarioe2e927f731e-bac8-4ae0-973b-6070d3e36c53">
                                     <div>
 
                                         <div style="padding-right: 30px">
                                             <i class="glyphicon glyphicon-chevron-right"></i>
                                             <i class="glyphicon glyphicon-chevron-down"></i>
-                                            <b>Scenario Outline:</b>As a user I expect validation on the login input for an incorrect email
+                                            <b>Scenario Outline:</b>As a user I can interact and assert on login forms with localhost creds
                                         </div>
                                         <div>
                             <span class="label-container">
-                              <span class="label label-success"
-                                                               title="6 Steps Passed">6</span>
                               
                               
                               
+                              <span class="label label-warning"
+                                                                title="7 Steps Skipped">7</span>
                               
                               
                             </span>
@@ -369,35 +370,31 @@ pre {
                                 </a>
                             </h4>
                         </div>
-                        <div id="collapseScenarioe2e15b6942b-6b90-4892-8863-e4899a8c6c69"
+                        <div id="collapseScenarioe2e927f731e-bac8-4ae0-973b-6070d3e36c53"
                              class="panel-collapse collapse">
                             <div class="panel-body">
                                 <div></div>
                                 
                                 
                                 
-                                
-                                
                                 <p class="scenario-container">
                                 <div class="row steps">
                                     
                                     
-                                    <span class="label label-success" title="Success"><i
-                                            class="glyphicon glyphicon-ok"></i></span>
+                                    <span class="label label-danger" title="Failed"><i
+                                            class="glyphicon glyphicon-remove"></i></span>
                                     
                                     
                                     <span class="text">
-                        <span class="keyword highlight">Given </span>
-                          <span> I am on the &quot;home&quot; page</span>
+                        <span class="keyword highlight">Before</span>
+                          <span> </span>
                             
                           
                               <span class="step-duration">
-                               306ms
+                               542ms
                               </span>
                             
                          
-                            
-                          
                           <!-- Adding data table data-->
                           
                       </span>
@@ -405,254 +402,58 @@ pre {
                                 
 
                                     
+                                    <a href="#error0_00"
+                                       data-toggle="collapse" class="toggle">Show Error +</a>
+                                    <div id="error0_00"
+                                         class="collapse">
+                                        <pre class="info show-modal"
+                                             data-toggle="modal"
+                                             style="cursor: pointer"
+                                             data-target="#error-modal-0_00">
+                                            <br> browserContext.newPage: Protocol error (Emulation.setDeviceMetricsOverride): Invalid parameters Failed to deserialize params.width - BINDINGS: int32 value expected at position 22
+    at ScenarioWorld.(anonymous) (/Users/bluelotus03/Desktop/Playwright-Cucumber-TS-Automation-Framework/e2e/src/step-definitions/setup/world.ts:32:36)
+    at fulfilled (/Users/bluelotus03/Desktop/Playwright-Cucumber-TS-Automation-Framework/e2e/src/step-definitions/setup/world.ts:5:58)</pre>
+                                    </div>
 
-                                    
+                                <div class="modal fade" id="error-modal-0_00" tabindex="-1" role="dialog"
+                                     aria-labelledby="stacktraceModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close"><span aria-hidden="true">&times;</span>
+                                                </button>
+                                                <h4 class="modal-title" id="error-modal-title">
+                                                    Error
+                                                </h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <h5>
+                                                    <pre><br>browserContext.newPage: Protocol error (Emulation.setDeviceMetricsOverride): Invalid parameters Failed to deserialize params.width - BINDINGS: int32 value expected at position 22
+    at ScenarioWorld.(anonymous) (/Users/bluelotus03/Desktop/Playwright-Cucumber-TS-Automation-Framework/e2e/src/step-definitions/setup/world.ts:32:36)
+    at fulfilled (/Users/bluelotus03/Desktop/Playwright-Cucumber-TS-Automation-Framework/e2e/src/step-definitions/setup/world.ts:5:58)</pre>
+                                                </h5>
+                                            </div>
 
-                                    
-
-                                    
-                                </div>
-                                </p>
-                                
-                                
-                                
-                                <p class="scenario-container">
-                                <div class="row steps">
-                                    
-                                    
-                                    <span class="label label-success" title="Success"><i
-                                            class="glyphicon glyphicon-ok"></i></span>
-                                    
-                                    
-                                    <span class="text">
-                        <span class="keyword highlight">And </span>
-                          <span> I click the &quot;playground&quot; button</span>
-                            
-                          
-                              <span class="step-duration">
-                               79ms
-                              </span>
-                            
-                         
-                            
-                          
-                          <!-- Adding data table data-->
-                          
-                      </span>
-                                
-                                
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-                                </div>
-                                </p>
-                                
-                                
-                                
-                                <p class="scenario-container">
-                                <div class="row steps">
-                                    
-                                    
-                                    <span class="label label-success" title="Success"><i
-                                            class="glyphicon glyphicon-ok"></i></span>
-                                    
-                                    
-                                    <span class="text">
-                        <span class="keyword highlight">When </span>
-                          <span> I am directed to the &quot;playground&quot; page</span>
-                            
-                          
-                              <span class="step-duration">
-                               1ms
-                              </span>
-                            
-                         
-                            
-                          
-                          <!-- Adding data table data-->
-                          
-                      </span>
-                                
-                                
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-                                </div>
-                                </p>
-                                
-                                
-                                
-                                <p class="scenario-container">
-                                <div class="row steps">
-                                    
-                                    
-                                    <span class="label label-success" title="Success"><i
-                                            class="glyphicon glyphicon-ok"></i></span>
-                                    
-                                    
-                                    <span class="text">
-                        <span class="keyword highlight">And </span>
-                          <span> I fill in the &quot;email&quot; input with &quot;com.testingtalks&quot;</span>
-                            
-                          
-                              <span class="step-duration">
-                               338ms
-                              </span>
-                            
-                         
-                            
-                          
-                          <!-- Adding data table data-->
-                          
-                      </span>
-                                
-                                
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-                                </div>
-                                </p>
-                                
-                                
-                                
-                                <p class="scenario-container">
-                                <div class="row steps">
-                                    
-                                    
-                                    <span class="label label-success" title="Success"><i
-                                            class="glyphicon glyphicon-ok"></i></span>
-                                    
-                                    
-                                    <span class="text">
-                        <span class="keyword highlight">And </span>
-                          <span> I fill in the &quot;password&quot; input with &quot;Password1234&quot;</span>
-                            
-                          
-                              <span class="step-duration">
-                               24ms
-                              </span>
-                            
-                         
-                            
-                          
-                          <!-- Adding data table data-->
-                          
-                      </span>
-                                
-                                
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-                                </div>
-                                </p>
-                                
-                                
-                                
-                                <p class="scenario-container">
-                                <div class="row steps">
-                                    
-                                    
-                                    <span class="label label-success" title="Success"><i
-                                            class="glyphicon glyphicon-ok"></i></span>
-                                    
-                                    
-                                    <span class="text">
-                        <span class="keyword highlight">And </span>
-                          <span> the &quot;email error&quot; should contain the text &quot;Please include an &#39;@&#39; in the email address.&quot;</span>
-                            
-                          
-                              <span class="step-duration">
-                               7ms
-                              </span>
-                            
-                         
-                            
-                          
-                          <!-- Adding data table data-->
-                          
-                      </span>
-                                
-                                
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-                                </div>
-                                </p>
-                                
-                                
-                                
-                                
-                            </div>
-                        </div>
-                    </div>
-                    
-                    
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-                                
-                                
-                                <div class="tags"> <span class="tag"> @dev</span>
-                                     <span class="tag"> @smoke</span>
-                                     <span class="tag"> @regression</span>
-                                    
-                                </div>
-                                
-                                <a data-toggle="collapse" href="#collapseScenarioe2eaf2869d0-a28f-468e-9644-16e4fe86502d">
-                                    <div>
-
-                                        <div style="padding-right: 30px">
-                                            <i class="glyphicon glyphicon-chevron-right"></i>
-                                            <i class="glyphicon glyphicon-chevron-down"></i>
-                                            <b>Scenario Outline:</b>As a user I expect validation on the login input for an incorrect email
-                                        </div>
-                                        <div>
-                            <span class="label-container">
-                              <span class="label label-success"
-                                                               title="6 Steps Passed">6</span>
-                              
-                              
-                              
-                              
-                              
-                            </span>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">
+                                                    Close
+                                                </button>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div><small><i></i></small></div>
-                                </a>
-                            </h4>
-                        </div>
-                        <div id="collapseScenarioe2eaf2869d0-a28f-468e-9644-16e4fe86502d"
-                             class="panel-collapse collapse">
-                            <div class="panel-body">
-                                <div></div>
-                                
-                                
+                                </div>
+
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
                                 
                                 
                                 
@@ -660,8 +461,8 @@ pre {
                                 <div class="row steps">
                                     
                                     
-                                    <span class="label label-success" title="Success"><i
-                                            class="glyphicon glyphicon-ok"></i></span>
+                                    <span class="label label-warning" title="Skipped"><i
+                                            class="glyphicon glyphicon-minus"></i></span>
                                     
                                     
                                     <span class="text">
@@ -670,7 +471,7 @@ pre {
                             
                           
                               <span class="step-duration">
-                               349ms
+                               < 1ms
                               </span>
                             
                          
@@ -698,8 +499,8 @@ pre {
                                 <div class="row steps">
                                     
                                     
-                                    <span class="label label-success" title="Success"><i
-                                            class="glyphicon glyphicon-ok"></i></span>
+                                    <span class="label label-warning" title="Skipped"><i
+                                            class="glyphicon glyphicon-minus"></i></span>
                                     
                                     
                                     <span class="text">
@@ -708,7 +509,7 @@ pre {
                             
                           
                               <span class="step-duration">
-                               77ms
+                               < 1ms
                               </span>
                             
                          
@@ -736,8 +537,8 @@ pre {
                                 <div class="row steps">
                                     
                                     
-                                    <span class="label label-success" title="Success"><i
-                                            class="glyphicon glyphicon-ok"></i></span>
+                                    <span class="label label-warning" title="Skipped"><i
+                                            class="glyphicon glyphicon-minus"></i></span>
                                     
                                     
                                     <span class="text">
@@ -774,17 +575,17 @@ pre {
                                 <div class="row steps">
                                     
                                     
-                                    <span class="label label-success" title="Success"><i
-                                            class="glyphicon glyphicon-ok"></i></span>
+                                    <span class="label label-warning" title="Skipped"><i
+                                            class="glyphicon glyphicon-minus"></i></span>
                                     
                                     
                                     <span class="text">
                         <span class="keyword highlight">And </span>
-                          <span> I fill in the &quot;email&quot; input with &quot;com.&quot;</span>
+                          <span> I fill in the &quot;email&quot; input with &quot;$.TEST_EMAIL&quot;</span>
                             
                           
                               <span class="step-duration">
-                               327ms
+                               < 1ms
                               </span>
                             
                          
@@ -812,17 +613,17 @@ pre {
                                 <div class="row steps">
                                     
                                     
-                                    <span class="label label-success" title="Success"><i
-                                            class="glyphicon glyphicon-ok"></i></span>
+                                    <span class="label label-warning" title="Skipped"><i
+                                            class="glyphicon glyphicon-minus"></i></span>
                                     
                                     
                                     <span class="text">
                         <span class="keyword highlight">And </span>
-                          <span> I fill in the &quot;password&quot; input with &quot;Password1234&quot;</span>
+                          <span> I fill in the &quot;password&quot; input with &quot;$.TEST_PASSWORD&quot;</span>
                             
                           
                               <span class="step-duration">
-                               72ms
+                               < 1ms
                               </span>
                             
                          
@@ -850,17 +651,17 @@ pre {
                                 <div class="row steps">
                                     
                                     
-                                    <span class="label label-success" title="Success"><i
-                                            class="glyphicon glyphicon-ok"></i></span>
+                                    <span class="label label-warning" title="Skipped"><i
+                                            class="glyphicon glyphicon-minus"></i></span>
                                     
                                     
                                     <span class="text">
                         <span class="keyword highlight">And </span>
-                          <span> the &quot;email error&quot; should contain the text &quot;Please include an &#39;@&#39; in the email address.&quot;</span>
+                          <span> the &quot;email&quot; should contain the value &quot;admin@testingtalkshub.com.au&quot;</span>
                             
                           
                               <span class="step-duration">
-                               6ms
+                               < 1ms
                               </span>
                             
                          
@@ -883,6 +684,130 @@ pre {
                                 </p>
                                 
                                 
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-warning" title="Skipped"><i
+                                            class="glyphicon glyphicon-minus"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">And </span>
+                          <span> the &quot;password&quot; should contain the value &quot;Password1234&quot;</span>
+                            
+                          
+                              <span class="step-duration">
+                               < 1ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-danger" title="Failed"><i
+                                            class="glyphicon glyphicon-remove"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">After</span>
+                          <span> </span>
+                            
+                          
+                              <span class="step-duration">
+                               < 1ms
+                              </span>
+                            
+                         
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+                                    <a href="#error0_08"
+                                       data-toggle="collapse" class="toggle">Show Error +</a>
+                                    <div id="error0_08"
+                                         class="collapse">
+                                        <pre class="info show-modal"
+                                             data-toggle="modal"
+                                             style="cursor: pointer"
+                                             data-target="#error-modal-0_08">
+                                            <br> TypeError: Cannot read properties of undefined (reading 'page')
+    at ScenarioWorld.(anonymous) (/Users/bluelotus03/Desktop/Playwright-Cucumber-TS-Automation-Framework/e2e/src/step-definitions/setup/hooks.ts:26:19)
+    at Generator.next ((anonymous))
+    at /Users/bluelotus03/Desktop/Playwright-Cucumber-TS-Automation-Framework/e2e/src/step-definitions/setup/hooks.ts:8:71
+    at new Promise ((anonymous))
+    at __awaiter (/Users/bluelotus03/Desktop/Playwright-Cucumber-TS-Automation-Framework/e2e/src/step-definitions/setup/hooks.ts:4:12)
+    at ScenarioWorld.(anonymous) (/Users/bluelotus03/Desktop/Playwright-Cucumber-TS-Automation-Framework/e2e/src/step-definitions/setup/hooks.ts:32:12)</pre>
+                                    </div>
+
+                                <div class="modal fade" id="error-modal-0_08" tabindex="-1" role="dialog"
+                                     aria-labelledby="stacktraceModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close"><span aria-hidden="true">&times;</span>
+                                                </button>
+                                                <h4 class="modal-title" id="error-modal-title">
+                                                    Error
+                                                </h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <h5>
+                                                    <pre><br>TypeError: Cannot read properties of undefined (reading 'page')
+    at ScenarioWorld.(anonymous) (/Users/bluelotus03/Desktop/Playwright-Cucumber-TS-Automation-Framework/e2e/src/step-definitions/setup/hooks.ts:26:19)
+    at Generator.next ((anonymous))
+    at /Users/bluelotus03/Desktop/Playwright-Cucumber-TS-Automation-Framework/e2e/src/step-definitions/setup/hooks.ts:8:71
+    at new Promise ((anonymous))
+    at __awaiter (/Users/bluelotus03/Desktop/Playwright-Cucumber-TS-Automation-Framework/e2e/src/step-definitions/setup/hooks.ts:4:12)
+    at ScenarioWorld.(anonymous) (/Users/bluelotus03/Desktop/Playwright-Cucumber-TS-Automation-Framework/e2e/src/step-definitions/setup/hooks.ts:32:12)</pre>
+                                                </h5>
+                                            </div>
+
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">
+                                                    Close
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
                                 
                                 
                             </div>
@@ -923,20 +848,20 @@ pre {
         google.setOnLoadCallback(function() {drawChart({
                                                             "title" : "Features",
                                                             "failed" : 0,
-                                                            "passed" : 1,
+                                                            "passed" : 0,
                                                             "notdefined" : 0,
                                                             "pending" : 0,
-                                                            "skipped" : 0,
+                                                            "skipped" : 1,
                                                             "ambiguous" : 0
                                                         })
                                             });
         google.setOnLoadCallback(function() {drawChart({
                                                             "title" : "Scenarios",
                                                             "failed" : 0,
-                                                            "passed" : 2,
+                                                            "passed" : 0,
                                                             "notdefined" : 0,
                                                             "pending" : 0,
-                                                            "skipped" : 0,
+                                                            "skipped" : 1,
                                                             "ambiguous" : 0
                                                         })
                                             });
