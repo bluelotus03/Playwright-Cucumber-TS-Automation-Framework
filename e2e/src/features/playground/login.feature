@@ -1,8 +1,6 @@
 Feature: As a user I can interact with login forms
-# Course did not go over successful password implementation, only email. Will need to look further into this.
 
-    @todo
-    #@smoke @regression 
+    @smoke @regression 
     Scenario: As a user I can interact and assert on login forms with localhost creds
         Given I am on the "home" page
         And I click the "playground" button
@@ -12,8 +10,7 @@ Feature: As a user I can interact with login forms
         And the "email" should contain the value "admin@testingtalkshub.com.au"
         And the "password" should contain the value "Password1234"
 
-    @todo
-    #@smoke @regression 
+    @smoke @regression 
     Scenario: As a user I can interact and assert on login forms with production creds
         Given I am on the "home" page
         And I click the "playground" button

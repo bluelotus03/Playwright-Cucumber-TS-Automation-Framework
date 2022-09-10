@@ -6,9 +6,9 @@ var _cucumberHtmlReporter = _interopRequireDefault(require("cucumber-html-report
 
 var _parseEnv = require("../env/parseEnv");
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
-_dotenv.default.config({
+_dotenv["default"].config({
   path: (0, _parseEnv.env)('COMMON_CONFIG_FILE')
 });
 
@@ -22,4 +22,4 @@ var options = {
   launchReport: false
 };
 
-_cucumberHtmlReporter.default.generate(options);
+_cucumberHtmlReporter["default"].generate(options);
