@@ -8,6 +8,8 @@ var _webElementHelper = require("../support/web-element-helper");
 
 var _htmlBehavior = require("../support/html-behavior");
 
+var _logger = require("../logger");
+
 function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
 
 function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
@@ -23,7 +25,9 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
         switch (_context2.prev = _context2.next) {
           case 0:
             _this$screen = this.screen, page = _this$screen.page, context = _this$screen.context, globalConfig = this.globalConfig;
-            console.log("I fill in the ".concat(elementKey, " on the ").concat(elementPosition, " tab|window with the ").concat(inputValue));
+
+            _logger.logger.log("I fill in the ".concat(elementKey, " on the ").concat(elementPosition, " tab|window with the ").concat(inputValue));
+
             pageIndex = Number((_elementPosition$matc = elementPosition.match(/\d/g)) === null || _elementPosition$matc === void 0 ? void 0 : _elementPosition$matc.join('')) - 1;
             elementIdentifier = (0, _webElementHelper.getElementLocator)(page, elementKey, globalConfig);
             _context2.next = 6;

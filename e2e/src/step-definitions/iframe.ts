@@ -4,6 +4,7 @@ import { waitFor } from '../support/wait-for-behavior';
 import { getIframeElement, inputValueOnIframe } from '../support/html-behavior';
 import { getElementLocator } from '../support/web-element-helper';
 import { ElementKey } from '../env/global';
+import { logger } from '../logger';
 
 
 Then(
@@ -13,7 +14,7 @@ Then(
             screen: { page },
             globalConfig,
         } = this;
-        console.log(`I fill in the ${elementKey} input on the ${iframeName} iframe with ${inputValue}`);
+        logger.log(`I fill in the ${elementKey} input on the ${iframeName} iframe with ${inputValue}`);
 
         const elementIdentifier = getElementLocator(page, elementKey, globalConfig);
         const iframeIdentifier = getElementLocator(page, iframeName, globalConfig);

@@ -4,6 +4,7 @@ import { waitFor } from '../support/wait-for-behavior';
 import { getElementLocator } from '../support/web-element-helper';
 import { ElementKey } from '../env/global';
 import { inputValueOnPage } from '../support/html-behavior';
+import { logger } from '../logger';
 
 Then(
     /^I fill in the "([^"]*)" input on the "([0-9]+th|[0-9]+st|[0-9]+nd|[0-9]+rd])" (?:tab|window) with "([^"]*)"$/,
@@ -12,7 +13,7 @@ Then(
             screen: { page, context },
             globalConfig,
         } = this;
-        console.log(`I fill in the ${elementKey} on the ${elementPosition} tab|window with the ${inputValue}`);
+        logger.log(`I fill in the ${elementKey} on the ${elementPosition} tab|window with the ${inputValue}`);
 
         const pageIndex = Number(elementPosition.match(/\d/g)?.join('')) -1;
         const elementIdentifier = getElementLocator(page, elementKey, globalConfig);

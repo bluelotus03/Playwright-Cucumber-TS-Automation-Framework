@@ -3,6 +3,7 @@ import { ElementKey } from '../../env/global';
 import  { getElementLocator } from '../../support/web-element-helper';
 import { ScenarioWorld } from "../setup/world";
 import { waitFor } from '../../support/wait-for-behavior';
+import { logger } from '../../logger';
 
 
 Then(
@@ -12,7 +13,7 @@ Then(
             screen: { page },
             globalConfig,
         } = this;
-        console.log(`the ${elementKey} should ${negate?'not':''} be displayed`);
+        logger.log(`the ${elementKey} should ${negate?'not':''} be displayed`);
 
         const elementIdentifier = getElementLocator(page, elementKey, globalConfig);
        
@@ -30,7 +31,7 @@ Then(
             screen: { page },
             globalConfig,
         } = this;
-        console.log(`the ${elementPosition} ${elementKey} should ${negate?'not':''} be displayed`);
+        logger.log(`the ${elementPosition} ${elementKey} should ${negate?'not':''} be displayed`);
 
         const elementIdentifier = getElementLocator(page, elementKey, globalConfig);
         const index = Number(elementPosition.match(/\d/g)?.join('')) -1;
@@ -49,7 +50,7 @@ Then(
             screen: { page },
             globalConfig,
         } = this;
-        console.log(`I should ${negate?'not':''}see ${count} ${elementKey}  displayed`);
+        logger.log(`I should ${negate?'not':''}see ${count} ${elementKey}  displayed`);
 
         const elementIdentifier = getElementLocator(page, elementKey, globalConfig);
 

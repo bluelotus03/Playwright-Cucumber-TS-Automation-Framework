@@ -17,7 +17,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
       while (1) {
         switch (_context2.prev = _context2.next) {
           case 0:
-            page = this.screen.page, globalConfig = this.globalConfig; //console.log(`the ${elementKey} should ${negate?'not ':''}equal ${globalVariables[variableKey]} stored in global variables`);
+            page = this.screen.page, globalConfig = this.globalConfig; //logger.log(`the ${elementKey} should ${negate?'not ':''}equal ${globalVariables[variableKey]} stored in global variables`);
 
             elementIdentifier = (0, _webElementHelper.getElementLocator)(page, elementKey, globalConfig);
             _context2.next = 4;
@@ -60,7 +60,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
       while (1) {
         switch (_context4.prev = _context4.next) {
           case 0:
-            page = this.screen.page, globalConfig = this.globalConfig; //console.log(`the ${elementKey} should ${negate?'not ':''}contain the ${globalVariables[variableKey]} stored in global variables`);
+            page = this.screen.page, globalConfig = this.globalConfig; //logger.log(`the ${elementKey} should ${negate?'not ':''}contain the ${globalVariables[variableKey]} stored in global variables`);
 
             elementIdentifier = (0, _webElementHelper.getElementLocator)(page, elementKey, globalConfig);
             _context4.next = 4;

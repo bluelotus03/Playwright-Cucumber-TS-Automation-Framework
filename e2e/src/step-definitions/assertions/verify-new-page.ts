@@ -3,6 +3,7 @@ import { ElementKey } from '../../env/global';
 import { getElementLocator } from '../../support/web-element-helper';
 import { ScenarioWorld } from "../setup/world";
 import { waitFor } from '../../support/wait-for-behavior';
+import { logger } from '../../logger';
 
 
 Then(
@@ -11,7 +12,7 @@ Then(
         const {
             screen: { page, context },
         } = this;
-        console.log(`the ${elementPosition} tab|window should ${negate?'not':''}contain the title ${expectedTitle}`);
+        logger.log(`the ${elementPosition} tab|window should ${negate?'not':''}contain the title ${expectedTitle}`);
         
         const pageIndex = Number(elementPosition.match(/\d/g)?.join('')) -1;
 
@@ -32,7 +33,7 @@ Then(
             screen: { page, context },
             globalConfig,
         } = this;
-        console.log(`the ${elementPosition} tab|window should ${negate?'not':''}be displayed`);
+        logger.log(`the ${elementPosition} tab|window should ${negate?'not':''}be displayed`);
         
         const pageIndex = Number(elementPosition.match(/\d/g)?.join('')) -1;
         const elementIdentifier = getElementLocator(page, elementKey, globalConfig);
@@ -52,7 +53,7 @@ Then(
             screen: { page, context },
             globalConfig,
         } = this;
-        console.log(`the ${elementKey} on the ${elementPosition} tab|window should ${negate?'not':''}contain the text ${expectedElementText}`);
+        logger.log(`the ${elementKey} on the ${elementPosition} tab|window should ${negate?'not':''}contain the text ${expectedElementText}`);
         
         const pageIndex = Number(elementPosition.match(/\d/g)?.join('')) -1;
         const elementIdentifier = getElementLocator(page, elementKey, globalConfig);
@@ -72,7 +73,7 @@ Then(
             screen: { page, context },
             globalConfig,
         } = this;
-        console.log(`the ${elementKey} on the ${elementPosition} tab|window should ${negate?'not':''}equal the text ${expectedElementText}`);
+        logger.log(`the ${elementKey} on the ${elementPosition} tab|window should ${negate?'not':''}equal the text ${expectedElementText}`);
         
         const pageIndex = Number(elementPosition.match(/\d/g)?.join('')) -1;
         const elementIdentifier = getElementLocator(page, elementKey, globalConfig);

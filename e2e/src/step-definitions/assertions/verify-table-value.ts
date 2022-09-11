@@ -3,6 +3,7 @@ import { ElementKey } from '../../env/global';
 import { getElementLocator } from '../../support/web-element-helper';
 import { ScenarioWorld } from "../setup/world";
 import { waitFor } from '../../support/wait-for-behavior';
+import { logger } from '../../logger';
 
 Then(
     /^the "([^"]*)" table should( not)? equal the following:$/,
@@ -11,10 +12,10 @@ Then(
             screen: { page },
             globalConfig,
         } = this;
-        console.log(`the ${elementKey} table should ${negate?'not ':''}equal the following:`);
+        logger.log(`the ${elementKey} table should ${negate?'not ':''}equal the following:`);
 
         const elementIdentifier = getElementLocator(page, elementKey, globalConfig);
-        console.log(elementIdentifier+" tbody tr");
+        logger.log(elementIdentifier+" tbody tr");
 
         await waitFor(async () => {
             const dataBefore = await page.$$eval(elementIdentifier+" tbody tr", (rows) => {
@@ -23,8 +24,8 @@ Then(
                     return Array.from(cells).map(cell => cell.textContent);
                 })
             });
-            console.log("html table ", JSON.stringify(dataBefore));
-            console.log("cucumber table ", JSON.stringify(dataTable.raw()));
+            logger.log("html table ", JSON.stringify(dataBefore));
+            logger.log("cucumber table ", JSON.stringify(dataTable.raw()));
             
             return JSON.stringify(dataBefore) === JSON.stringify(dataTable.raw()) === !negate;
         })

@@ -3,6 +3,7 @@ import { PageId } from '../env/global';
 import { navigateToPage, currentPathMatchesPageId, reloadPage } from '../support/navigation-behavior';
 import { waitFor } from '../support/wait-for-behavior';
 import { ScenarioWorld } from "./setup/world";
+import { logger } from "../logger";
 
 Given(
     /^I am on the "(.*)" page$/, 
@@ -12,7 +13,7 @@ Given(
             globalConfig,
         } = this;
 
-        console.log(`I am on the ${pageId} page`);
+        logger.log(`I am on the ${pageId} page`);
         await navigateToPage(page, pageId, globalConfig);
 
         await waitFor(() => currentPathMatchesPageId(page, pageId, globalConfig));
@@ -26,7 +27,7 @@ Given(
             screen: { page },
             globalConfig,
         } = this;
-        console.log(`I am directed to the ${pageId} page`);
+        logger.log(`I am directed to the ${pageId} page`);
 
         await waitFor(() => currentPathMatchesPageId(page, pageId, globalConfig));
     }
@@ -39,7 +40,7 @@ Given(
             screen: { page },
             globalConfig,
         } = this;
-        console.log(`I refresh the ${pageId} page`);
+        logger.log(`I refresh the ${pageId} page`);
 
         await reloadPage(page);
         await waitFor(() => currentPathMatchesPageId(page, pageId, globalConfig), {
