@@ -26,7 +26,7 @@ var navigateToPage = /*#__PURE__*/function () {
             pagesConfigItem = pagesConfig[pageId];
             url.pathname = pagesConfigItem.route;
             _context.next = 8;
-            return page["goto"](url.href);
+            return page.goto(url.href);
 
           case 8:
           case "end":

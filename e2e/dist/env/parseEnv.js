@@ -19,7 +19,8 @@ exports.env = env;
 
 var getJsonFromFile = function getJsonFromFile(path) {
   return require("".concat(process.cwd()).concat(path));
-};
+}; // TODO: Fix returning undefined -- happened with new waitForSelector implementation
+
 
 exports.getJsonFromFile = getJsonFromFile;
 

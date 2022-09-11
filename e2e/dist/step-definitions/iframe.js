@@ -29,28 +29,27 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
             iframeIdentifier = (0, _webElementHelper.getElementLocator)(page, iframeName, globalConfig);
             _context2.next = 6;
             return (0, _waitForBehavior.waitFor)( /*#__PURE__*/_asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee() {
-              var elementIframe, result;
+              var iframeStable, elementIframe;
               return regeneratorRuntime.wrap(function _callee$(_context) {
                 while (1) {
                   switch (_context.prev = _context.next) {
                     case 0:
                       _context.next = 2;
-                      return (0, _htmlBehavior.getIframeElement)(page, iframeIdentifier);
+                      return (0, _waitForBehavior.waitForSelector)(page, iframeIdentifier);
 
                     case 2:
-                      elementIframe = _context.sent;
-                      _context.next = 5;
-                      return page.waitForSelector(iframeIdentifier, {
-                        state: 'visible'
-                      });
+                      iframeStable = _context.sent;
 
-                    case 5:
-                      result = _context.sent;
-
-                      if (!result) {
+                      if (!iframeStable) {
                         _context.next = 10;
                         break;
                       }
+
+                      _context.next = 6;
+                      return (0, _htmlBehavior.getIframeElement)(page, iframeIdentifier);
+
+                    case 6:
+                      elementIframe = _context.sent;
 
                       if (!elementIframe) {
                         _context.next = 10;
@@ -61,7 +60,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                       return (0, _htmlBehavior.inputValueOnIframe)(elementIframe, elementIdentifier, inputValue);
 
                     case 10:
-                      return _context.abrupt("return", result);
+                      return _context.abrupt("return", iframeStable);
 
                     case 11:
                     case "end":

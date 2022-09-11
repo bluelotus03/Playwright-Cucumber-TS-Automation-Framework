@@ -10,6 +10,7 @@ export const getJsonFromFile = <T = Record<string, string>>(path: string): T => 
     return require(`${process.cwd()}${path}`);
 }
 
+// TODO: Fix returning undefined -- happened with new waitForSelector implementation
 export const envNumber = (key: string): number => {
     return Number(env[key]);
 }

@@ -1,6 +1,6 @@
 import { Then } from '@cucumber/cucumber';
 import { ScenarioWorld } from './setup/world';
-import { waitFor } from '../support/wait-for-behavior';
+import { waitFor, waitForSelectorOnPage } from '../support/wait-for-behavior';
 import { getElementLocator } from '../support/web-element-helper';
 import { ElementKey } from '../env/global';
 import { inputValueOnPage } from '../support/html-behavior';
@@ -20,15 +20,13 @@ Then(
         
         await waitFor( async () => {
             let pages = context.pages();
-            const result = await pages[pageIndex].waitForSelector(elementIdentifier, {
-                state: 'visible'
-            });
+            const elementStable = await waitForSelectorOnPage(page, elementIdentifier, pages, pageIndex);
 
-            if (result) {
+            if (elementStable) {
                 await inputValueOnPage(pages, pageIndex, elementIdentifier, inputValue);
             }
 
-            return result;
+            return elementStable;
         });
     }
 );
