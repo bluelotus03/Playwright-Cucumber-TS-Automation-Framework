@@ -18,7 +18,7 @@ export const clickElementAtIndex = async (
     await element?.click();
 };
 
-export const inputValue = async (
+export const inputElementValue = async (
     page: Page,
     elementIdentifier: ElementLocator,
     input: string,
@@ -27,7 +27,7 @@ export const inputValue = async (
     await page.fill(elementIdentifier, input);
 };
 
-export const selectValue = async (
+export const selectElementValue = async (
     page: Page,
     elementIdentifier: ElementLocator,
     option: string,
@@ -70,11 +70,10 @@ export const elementEnabled = async (
 
 };
 
-export const getValue = async (
+export const getElementValue = async (
     page: Page,
     elementIdentifier: ElementLocator,
 ): Promise<string | null> => {
-    await page.waitForSelector(elementIdentifier);
     const value = await page.$eval<string, HTMLSelectElement>(elementIdentifier, el => {
         return el.value;
     })
@@ -182,7 +181,6 @@ export const getIframeElement = async (
     page: Page,
     iframeIdentifier: ElementLocator,
 ): Promise<Frame | undefined | null> => {
-    await page.waitForSelector(iframeIdentifier);
     const elementHandle = await page.$(iframeIdentifier);
     const elementIframe = await elementHandle?.contentFrame();
     return elementIframe;
@@ -206,7 +204,7 @@ export const inputValueOnPage = async (
     await pages[pageIndex].fill(elementIdentifier, inputValue);
 };
 
-export const scrollIntoView = async (
+export const scrollElementIntoView = async (
     page: Page,
     elementIdentifier: ElementLocator,
 ): Promise<void> => {

@@ -3,7 +3,7 @@ import { ElementKey } from '../../env/global';
 import { getElementLocator } from '../../support/web-element-helper';
 import { ScenarioWorld } from "../setup/world";
 import { waitFor, waitForSelector } from '../../support/wait-for-behavior';
-import { getValue, getAttributeText, getElementText, elementEnabled, getElementTextAtIndex } from '../../support/html-behavior';
+import { getElementValue, getAttributeText, getElementText, elementEnabled, getElementTextAtIndex } from '../../support/html-behavior';
 import { logger } from '../../logger';
 
 
@@ -74,7 +74,7 @@ Then(
             const elementStable = await waitForSelector(page, elementIdentifier);
 
             if (elementStable) {
-                const elementAttribute = await getValue(page, elementIdentifier);
+                const elementAttribute = await getElementValue(page, elementIdentifier);
                 return elementAttribute?.includes(elementValue) === !negate;
             } else {
                 return elementStable;
@@ -99,7 +99,7 @@ Then(
             const elementStable = await waitForSelector(page, elementIdentifier);
 
             if (elementStable) {
-                const elementAttribute = await getValue(page, elementIdentifier);
+                const elementAttribute = await getElementValue(page, elementIdentifier);
                 return (elementAttribute === elementValue) === !negate;
             } else {
                 return elementStable;

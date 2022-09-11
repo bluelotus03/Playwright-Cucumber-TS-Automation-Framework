@@ -3,7 +3,7 @@ import { ScenarioWorld } from './setup/world';
 import { waitFor, waitForSelector } from '../support/wait-for-behavior';
 import { getElementLocator } from '../support/web-element-helper';
 import { ElementKey } from '../env/global';
-import { scrollIntoView } from '../support/html-behavior';
+import { scrollElementIntoView } from '../support/html-behavior';
 import { logger } from '../logger';
 
 Then(
@@ -21,7 +21,7 @@ Then(
             const elementStable = await waitForSelector(page, elementIdentifier);
 
             if (elementStable) {
-                await scrollIntoView(page, elementIdentifier);
+                await scrollElementIntoView(page, elementIdentifier);
             };
 
             return elementStable;

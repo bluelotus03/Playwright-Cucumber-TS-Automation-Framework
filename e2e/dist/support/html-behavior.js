@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.uncheckElement = exports.selectValue = exports.scrollIntoView = exports.inputValueOnPage = exports.inputValueOnIframe = exports.inputValue = exports.getValue = exports.getTitleWithinPage = exports.getTextWithinIframeElement = exports.getTableData = exports.getIframeElement = exports.getElements = exports.getElementWithinIframe = exports.getElementTextWithinPage = exports.getElementTextAtIndex = exports.getElementText = exports.getElementOnPage = exports.getElementAtIndex = exports.getElement = exports.getAttributeText = exports.elementEnabled = exports.elementChecked = exports.clickElementAtIndex = exports.clickElement = exports.checkElement = void 0;
+exports.uncheckElement = exports.selectElementValue = exports.scrollElementIntoView = exports.inputValueOnPage = exports.inputValueOnIframe = exports.inputElementValue = exports.getTitleWithinPage = exports.getTextWithinIframeElement = exports.getTableData = exports.getIframeElement = exports.getElements = exports.getElementWithinIframe = exports.getElementValue = exports.getElementTextWithinPage = exports.getElementTextAtIndex = exports.getElementText = exports.getElementOnPage = exports.getElementAtIndex = exports.getElement = exports.getAttributeText = exports.elementEnabled = exports.elementChecked = exports.clickElementAtIndex = exports.clickElement = exports.checkElement = void 0;
 
 function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
 
@@ -63,7 +63,7 @@ var clickElementAtIndex = /*#__PURE__*/function () {
 
 exports.clickElementAtIndex = clickElementAtIndex;
 
-var inputValue = /*#__PURE__*/function () {
+var inputElementValue = /*#__PURE__*/function () {
   var _ref3 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee3(page, elementIdentifier, input) {
     return regeneratorRuntime.wrap(function _callee3$(_context3) {
       while (1) {
@@ -84,14 +84,14 @@ var inputValue = /*#__PURE__*/function () {
     }, _callee3);
   }));
 
-  return function inputValue(_x6, _x7, _x8) {
+  return function inputElementValue(_x6, _x7, _x8) {
     return _ref3.apply(this, arguments);
   };
 }();
 
-exports.inputValue = inputValue;
+exports.inputElementValue = inputElementValue;
 
-var selectValue = /*#__PURE__*/function () {
+var selectElementValue = /*#__PURE__*/function () {
   var _ref4 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee4(page, elementIdentifier, option) {
     return regeneratorRuntime.wrap(function _callee4$(_context4) {
       while (1) {
@@ -112,12 +112,12 @@ var selectValue = /*#__PURE__*/function () {
     }, _callee4);
   }));
 
-  return function selectValue(_x9, _x10, _x11) {
+  return function selectElementValue(_x9, _x10, _x11) {
     return _ref4.apply(this, arguments);
   };
 }();
 
-exports.selectValue = selectValue;
+exports.selectElementValue = selectElementValue;
 
 var checkElement = /*#__PURE__*/function () {
   var _ref5 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee5(page, elementIdentifier) {
@@ -229,7 +229,7 @@ var elementEnabled = /*#__PURE__*/function () {
 
 exports.elementEnabled = elementEnabled;
 
-var getValue = /*#__PURE__*/function () {
+var getElementValue = /*#__PURE__*/function () {
   var _ref9 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee9(page, elementIdentifier) {
     var value;
     return regeneratorRuntime.wrap(function _callee9$(_context9) {
@@ -237,19 +237,15 @@ var getValue = /*#__PURE__*/function () {
         switch (_context9.prev = _context9.next) {
           case 0:
             _context9.next = 2;
-            return page.waitForSelector(elementIdentifier);
-
-          case 2:
-            _context9.next = 4;
             return page.$eval(elementIdentifier, function (el) {
               return el.value;
             });
 
-          case 4:
+          case 2:
             value = _context9.sent;
             return _context9.abrupt("return", value);
 
-          case 6:
+          case 4:
           case "end":
             return _context9.stop();
         }
@@ -257,12 +253,12 @@ var getValue = /*#__PURE__*/function () {
     }, _callee9);
   }));
 
-  return function getValue(_x20, _x21) {
+  return function getElementValue(_x20, _x21) {
     return _ref9.apply(this, arguments);
   };
 }();
 
-exports.getValue = getValue;
+exports.getElementValue = getElementValue;
 
 var getElement = /*#__PURE__*/function () {
   var _ref10 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee10(page, elementIdentifier) {
@@ -583,22 +579,18 @@ var getIframeElement = /*#__PURE__*/function () {
         switch (_context21.prev = _context21.next) {
           case 0:
             _context21.next = 2;
-            return page.waitForSelector(iframeIdentifier);
-
-          case 2:
-            _context21.next = 4;
             return page.$(iframeIdentifier);
 
-          case 4:
+          case 2:
             elementHandle = _context21.sent;
-            _context21.next = 7;
+            _context21.next = 5;
             return elementHandle === null || elementHandle === void 0 ? void 0 : elementHandle.contentFrame();
 
-          case 7:
+          case 5:
             elementIframe = _context21.sent;
             return _context21.abrupt("return", elementIframe);
 
-          case 9:
+          case 7:
           case "end":
             return _context21.stop();
         }
@@ -665,7 +657,7 @@ var inputValueOnPage = /*#__PURE__*/function () {
 
 exports.inputValueOnPage = inputValueOnPage;
 
-var scrollIntoView = /*#__PURE__*/function () {
+var scrollElementIntoView = /*#__PURE__*/function () {
   var _ref24 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee24(page, elementIdentifier) {
     var element;
     return regeneratorRuntime.wrap(function _callee24$(_context24) {
@@ -684,12 +676,12 @@ var scrollIntoView = /*#__PURE__*/function () {
     }, _callee24);
   }));
 
-  return function scrollIntoView(_x61, _x62) {
+  return function scrollElementIntoView(_x61, _x62) {
     return _ref24.apply(this, arguments);
   };
 }();
 
-exports.scrollIntoView = scrollIntoView;
+exports.scrollElementIntoView = scrollElementIntoView;
 
 var getTableData = /*#__PURE__*/function () {
   var _ref25 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee25(page, elementIdentifier) {

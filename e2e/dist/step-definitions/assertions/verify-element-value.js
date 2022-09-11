@@ -170,7 +170,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                       }
 
                       _context5.next = 6;
-                      return (0, _htmlBehavior.getValue)(page, elementIdentifier);
+                      return (0, _htmlBehavior.getElementValue)(page, elementIdentifier);
 
                     case 6:
                       elementAttribute = _context5.sent;
@@ -230,7 +230,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                       }
 
                       _context7.next = 6;
-                      return (0, _htmlBehavior.getValue)(page, elementIdentifier);
+                      return (0, _htmlBehavior.getElementValue)(page, elementIdentifier);
 
                     case 6:
                       elementAttribute = _context7.sent;

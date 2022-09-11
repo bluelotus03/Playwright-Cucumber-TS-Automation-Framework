@@ -45,7 +45,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                       }
 
                       _context.next = 6;
-                      return (0, _htmlBehavior.scrollIntoView)(page, elementIdentifier);
+                      return (0, _htmlBehavior.scrollElementIntoView)(page, elementIdentifier);
 
                     case 6:
                       ;
