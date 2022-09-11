@@ -1,4 +1,4 @@
-import { Page, Frame } from 'playwright';
+import { Page, Frame, ElementHandle } from 'playwright';
 import { ElementLocator } from '../env/global';
 
 
@@ -52,6 +52,24 @@ export const uncheckElement = async (
 
 };
 
+export const elementChecked = async (
+    page: Page,
+    elementIdentifier: ElementLocator,
+): Promise<boolean | null> => {
+    const checked = await page.isChecked(elementIdentifier);
+    return checked;
+
+};
+
+export const elementEnabled = async (
+    page: Page,
+    elementIdentifier: ElementLocator,
+): Promise<boolean | null> => {
+    const enabled = await page.isEnabled(elementIdentifier);
+    return enabled;
+
+};
+
 export const getValue = async (
     page: Page,
     elementIdentifier: ElementLocator,
@@ -64,6 +82,39 @@ export const getValue = async (
     return value;
 };
 
+export const getElement = async (
+    page: Page,
+    elementIdentifier: ElementLocator,
+): Promise<ElementHandle<SVGElement | HTMLElement> | null> => {
+    const element = await page.$(elementIdentifier);
+    return element;
+};
+
+export const getElements = async (
+    page: Page,
+    elementIdentifier: ElementLocator,
+): Promise<ElementHandle<SVGElement | HTMLElement>[]> => {
+    const elements = await page.$$(elementIdentifier);
+    return elements;
+};
+
+export const getElementAtIndex = async (
+    page: Page,
+    elementIdentifier: ElementLocator,
+    index: number,
+): Promise<ElementHandle<SVGElement | HTMLElement> | null> => {
+    const elementAtIndex = await page.$(`${elementIdentifier}>>nth=${index}`);
+    return elementAtIndex;
+};
+
+export const getElementWithinIframe = async (
+    elementIframe: Frame,
+    elementIdentifier: ElementLocator,
+): Promise<ElementHandle<SVGElement | HTMLElement> | null> => {
+    const visibleOnIframeElement = await elementIframe?.$(elementIdentifier);
+    return visibleOnIframeElement;
+};
+
 export const getAttributeText = async (
     page: Page,
     elementIdentifier: ElementLocator,
@@ -71,6 +122,60 @@ export const getAttributeText = async (
 ): Promise<string | null> => {
     const attributeText = page.locator(elementIdentifier).getAttribute(attribute);
     return attributeText;
+};
+
+export const getElementText = async (
+    page: Page,
+    elementIdentifier: ElementLocator,
+): Promise<string | null> => {
+    const elementText = page.textContent(elementIdentifier);
+    return elementText;
+};
+
+export const getElementTextAtIndex = async (
+    page: Page,
+    elementIdentifier: ElementLocator,
+    index: number,
+): Promise<string | null> => {
+    const textAtIndex = await page.textContent(`${elementIdentifier}>>nth=${index}`);
+    return textAtIndex;
+};
+
+export const getElementTextWithinPage = async (
+    page: Page,
+    elementIdentifier: ElementLocator,
+    pages: Array<Page>,
+    pageIndex: number,
+): Promise<string | null> => {
+    const textWithinPage = await pages[pageIndex].textContent(elementIdentifier);
+    return textWithinPage;
+};
+
+export const getElementOnPage = async (
+    page: Page,
+    elementIdentifier: ElementLocator,
+    pages: Array<Page>,
+    pageIndex: number,
+): Promise<ElementHandle<SVGElement | HTMLElement> | null> => {
+    const elementOnPage = await pages[pageIndex].$(elementIdentifier);
+    return elementOnPage;
+};
+
+export const getTitleWithinPage = async (
+    page: Page,
+    pages: Array<Page>,
+    pageIndex: number,
+): Promise<string | null> => {
+    const titleWithinPage = await pages[pageIndex].title();
+    return titleWithinPage;
+};
+
+export const getTextWithinIframeElement = async (
+    elementIframe: Frame,
+    elementIdentifier: ElementLocator,
+): Promise<string | null> => {
+    const textOnIframeElement = await elementIframe?.textContent(elementIdentifier);
+    return textOnIframeElement;
 };
 
 export const getIframeElement = async (
@@ -107,4 +212,17 @@ export const scrollIntoView = async (
 ): Promise<void> => {
     const element = page.locator(elementIdentifier);
     await element.scrollIntoViewIfNeeded();
+};
+
+export const getTableData = async (
+    page: Page,
+    elementIdentifier: ElementLocator,
+): Promise<string> => {
+    const table = await page.$$eval(elementIdentifier+" tbody tr", (rows) => {
+        return rows.map(row => {
+            const cells = row.querySelectorAll('td');
+            return Array.from(cells).map(cell => cell.textContent);
+        })
+    });
+    return JSON.stringify(table);
 };

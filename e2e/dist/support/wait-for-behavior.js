@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.waitForSelectorOnPage = exports.waitForSelector = exports.waitFor = void 0;
+exports.waitForSelectorOnPage = exports.waitForSelectorInIframe = exports.waitForSelector = exports.waitFor = void 0;
 
 var _logger = require("../logger");
 
@@ -149,3 +149,40 @@ var waitForSelectorOnPage = /*#__PURE__*/function () {
 }();
 
 exports.waitForSelectorOnPage = waitForSelectorOnPage;
+
+var waitForSelectorInIframe = /*#__PURE__*/function () {
+  var _ref5 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee4(elementIframe, elementIdentifier) {
+    return regeneratorRuntime.wrap(function _callee4$(_context4) {
+      while (1) {
+        switch (_context4.prev = _context4.next) {
+          case 0:
+            _context4.prev = 0;
+            _context4.next = 3;
+            return elementIframe === null || elementIframe === void 0 ? void 0 : elementIframe.waitForSelector(elementIdentifier, {
+              state: 'visible',
+              timeout: Number(process.env['SELECTOR_TIMEOUT']) // TODO: Use -> timeout: envNumber('SELECTOR_TIMEOUT')
+
+            });
+
+          case 3:
+            return _context4.abrupt("return", true);
+
+          case 6:
+            _context4.prev = 6;
+            _context4.t0 = _context4["catch"](0);
+            return _context4.abrupt("return", false);
+
+          case 9:
+          case "end":
+            return _context4.stop();
+        }
+      }
+    }, _callee4, null, [[0, 6]]);
+  }));
+
+  return function waitForSelectorInIframe(_x9, _x10) {
+    return _ref5.apply(this, arguments);
+  };
+}();
+
+exports.waitForSelectorInIframe = waitForSelectorInIframe;

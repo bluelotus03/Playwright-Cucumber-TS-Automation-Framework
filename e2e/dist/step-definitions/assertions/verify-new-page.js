@@ -4,6 +4,8 @@ var _cucumber = require("@cucumber/cucumber");
 
 var _webElementHelper = require("../../support/web-element-helper");
 
+var _htmlBehavior = require("../../support/html-behavior");
+
 var _waitForBehavior = require("../../support/wait-for-behavior");
 
 var _logger = require("../../logger");
@@ -40,7 +42,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                     case 0:
                       pages = context.pages();
                       _context.next = 3;
-                      return pages[pageIndex].title();
+                      return (0, _htmlBehavior.getTitleWithinPage)(page, pages, pageIndex);
 
                     case 3:
                       pageTitle = _context.sent;
@@ -91,7 +93,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                     case 0:
                       pages = context.pages();
                       _context3.next = 3;
-                      return pages[pageIndex].$(elementIdentifier);
+                      return (0, _htmlBehavior.getElementOnPage)(page, elementIdentifier, pages, pageIndex);
 
                     case 3:
                       _context3.t0 = _context3.sent;
@@ -136,20 +138,34 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
             elementIdentifier = (0, _webElementHelper.getElementLocator)(page, elementKey, globalConfig);
             _context6.next = 6;
             return (0, _waitForBehavior.waitFor)( /*#__PURE__*/_asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee5() {
-              var pages, elementText;
+              var pages, elementStable, elementText;
               return regeneratorRuntime.wrap(function _callee5$(_context5) {
                 while (1) {
                   switch (_context5.prev = _context5.next) {
                     case 0:
                       pages = context.pages();
                       _context5.next = 3;
-                      return pages[pageIndex].textContent(elementIdentifier);
+                      return (0, _waitForBehavior.waitForSelectorOnPage)(page, elementIdentifier, pages, pageIndex);
 
                     case 3:
+                      elementStable = _context5.sent;
+
+                      if (!elementStable) {
+                        _context5.next = 11;
+                        break;
+                      }
+
+                      _context5.next = 7;
+                      return (0, _htmlBehavior.getElementTextWithinPage)(page, elementIdentifier, pages, pageIndex);
+
+                    case 7:
                       elementText = _context5.sent;
                       return _context5.abrupt("return", (elementText === null || elementText === void 0 ? void 0 : elementText.includes(expectedElementText)) === !negate);
 
-                    case 5:
+                    case 11:
+                      return _context5.abrupt("return", elementStable);
+
+                    case 12:
                     case "end":
                       return _context5.stop();
                   }
@@ -187,20 +203,34 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
             elementIdentifier = (0, _webElementHelper.getElementLocator)(page, elementKey, globalConfig);
             _context8.next = 6;
             return (0, _waitForBehavior.waitFor)( /*#__PURE__*/_asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee7() {
-              var pages, elementText;
+              var pages, elementStable, elementText;
               return regeneratorRuntime.wrap(function _callee7$(_context7) {
                 while (1) {
                   switch (_context7.prev = _context7.next) {
                     case 0:
                       pages = context.pages();
                       _context7.next = 3;
-                      return pages[pageIndex].textContent(elementIdentifier);
+                      return (0, _waitForBehavior.waitForSelectorOnPage)(page, elementIdentifier, pages, pageIndex);
 
                     case 3:
+                      elementStable = _context7.sent;
+
+                      if (!elementStable) {
+                        _context7.next = 11;
+                        break;
+                      }
+
+                      _context7.next = 7;
+                      return (0, _htmlBehavior.getElementTextWithinPage)(page, elementIdentifier, pages, pageIndex);
+
+                    case 7:
                       elementText = _context7.sent;
                       return _context7.abrupt("return", elementText === expectedElementText === !negate);
 
-                    case 5:
+                    case 11:
+                      return _context7.abrupt("return", elementStable);
+
+                    case 12:
                     case "end":
                       return _context7.stop();
                   }

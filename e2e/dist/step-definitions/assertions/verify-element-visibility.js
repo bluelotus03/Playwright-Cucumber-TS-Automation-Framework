@@ -4,6 +4,8 @@ var _cucumber = require("@cucumber/cucumber");
 
 var _webElementHelper = require("../../support/web-element-helper");
 
+var _htmlBehavior = require("../../support/html-behavior");
+
 var _waitForBehavior = require("../../support/wait-for-behavior");
 
 var _logger = require("../../logger");
@@ -32,7 +34,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                   switch (_context.prev = _context.next) {
                     case 0:
                       _context.next = 2;
-                      return page.$(elementIdentifier);
+                      return (0, _htmlBehavior.getElement)(page, elementIdentifier);
 
                     case 2:
                       _context.t0 = _context.sent;
@@ -82,7 +84,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                   switch (_context3.prev = _context3.next) {
                     case 0:
                       _context3.next = 2;
-                      return page.$("".concat(elementIdentifier, ">>nth=").concat(index));
+                      return (0, _htmlBehavior.getElementAtIndex)(page, elementIdentifier, index);
 
                     case 2:
                       _context3.t0 = _context3.sent;
@@ -129,7 +131,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                   switch (_context5.prev = _context5.next) {
                     case 0:
                       _context5.next = 2;
-                      return page.$$(elementIdentifier);
+                      return (0, _htmlBehavior.getElements)(page, elementIdentifier);
 
                     case 2:
                       element = _context5.sent;

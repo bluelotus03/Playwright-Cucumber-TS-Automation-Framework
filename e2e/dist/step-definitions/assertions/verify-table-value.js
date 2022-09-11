@@ -8,6 +8,8 @@ var _waitForBehavior = require("../../support/wait-for-behavior");
 
 var _logger = require("../../logger");
 
+var _htmlBehavior = require("../../support/html-behavior");
+
 function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
 
 function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
@@ -29,31 +31,38 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
             _context2.next = 6;
             return (0, _waitForBehavior.waitFor)( /*#__PURE__*/_asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee() {
-              var dataBefore;
+              var elementStable, tableDataBefore;
               return regeneratorRuntime.wrap(function _callee$(_context) {
                 while (1) {
                   switch (_context.prev = _context.next) {
                     case 0:
                       _context.next = 2;
-                      return page.$$eval(elementIdentifier + " tbody tr", function (rows) {
-                        return rows.map(function (row) {
-                          var cells = row.querySelectorAll('td');
-                          return Array.from(cells).map(function (cell) {
-                            return cell.textContent;
-                          });
-                        });
-                      });
+                      return (0, _waitForBehavior.waitForSelector)(page, elementIdentifier);
 
                     case 2:
-                      dataBefore = _context.sent;
+                      elementStable = _context.sent;
 
-                      _logger.logger.log("html table ", JSON.stringify(dataBefore));
+                      if (!elementStable) {
+                        _context.next = 12;
+                        break;
+                      }
+
+                      _context.next = 6;
+                      return (0, _htmlBehavior.getTableData)(page, elementIdentifier);
+
+                    case 6:
+                      tableDataBefore = _context.sent;
+
+                      _logger.logger.log("html table ", JSON.stringify(tableDataBefore));
 
                       _logger.logger.log("cucumber table ", JSON.stringify(dataTable.raw()));
 
-                      return _context.abrupt("return", JSON.stringify(dataBefore) === JSON.stringify(dataTable.raw()) === !negate);
+                      return _context.abrupt("return", tableDataBefore === JSON.stringify(dataTable.raw()) === !negate);
 
-                    case 6:
+                    case 12:
+                      return _context.abrupt("return", elementStable);
+
+                    case 13:
                     case "end":
                       return _context.stop();
                   }
