@@ -19,18 +19,20 @@ Then(
         const elementIdentifier = getElementLocator(page, elementKey, globalConfig);
         
         await waitFor( async () => {
-            const elementStable = await waitForSelector(page, elementIdentifier);
+                const elementStable = await waitForSelector(page, elementIdentifier);
 
-            if (elementStable) {
-                const elementText = await getElementText(page, elementIdentifier);
-                logger.debug("elementText", elementText);
-                logger.debug("expectedElementText", expectedElementText);
-                return elementText?.includes(expectedElementText) === !negate;
-            } else {
-                return elementStable;
-            }
-            
-        });
+                if (elementStable) {
+                    const elementText = await getElementText(page, elementIdentifier);
+                    logger.debug("elementText", elementText);
+                    logger.debug("expectedElementText", expectedElementText);
+                    return elementText?.includes(expectedElementText) === !negate;
+                } else {
+                    return elementStable;
+                }
+            }, 
+            globalConfig,
+            { target: elementKey }
+        );
     }
 );
 
@@ -46,16 +48,18 @@ Then(
         const elementIdentifier = getElementLocator(page, elementKey, globalConfig);
 
         await waitFor( async () => {
-            const elementStable = await waitForSelector(page, elementIdentifier);
+                const elementStable = await waitForSelector(page, elementIdentifier);
 
-            if (elementStable) {
-                const elementText = await getElementText(page, elementIdentifier);
-                return (elementText === expectedElementText) === !negate;
-            } else {
-                return elementStable;
-            }
-            
-        });
+                if (elementStable) {
+                    const elementText = await getElementText(page, elementIdentifier);
+                    return (elementText === expectedElementText) === !negate;
+                } else {
+                    return elementStable;
+                }
+            }, 
+            globalConfig,
+            { target: elementKey }
+        );
     }
 );
 
@@ -71,16 +75,18 @@ Then(
         const elementIdentifier = getElementLocator(page, elementKey, globalConfig);
 
         await waitFor( async () => {
-            const elementStable = await waitForSelector(page, elementIdentifier);
+                const elementStable = await waitForSelector(page, elementIdentifier);
 
-            if (elementStable) {
-                const elementAttribute = await getElementValue(page, elementIdentifier);
-                return elementAttribute?.includes(elementValue) === !negate;
-            } else {
-                return elementStable;
-            }
-            
-        });
+                if (elementStable) {
+                    const elementAttribute = await getElementValue(page, elementIdentifier);
+                    return elementAttribute?.includes(elementValue) === !negate;
+                } else {
+                    return elementStable;
+                }
+            }, 
+            globalConfig,
+            { target: elementKey }
+        );
     }
 );
 
@@ -96,16 +102,18 @@ Then(
         const elementIdentifier = getElementLocator(page, elementKey, globalConfig);
 
         await waitFor( async () => {
-            const elementStable = await waitForSelector(page, elementIdentifier);
+                const elementStable = await waitForSelector(page, elementIdentifier);
 
-            if (elementStable) {
-                const elementAttribute = await getElementValue(page, elementIdentifier);
-                return (elementAttribute === elementValue) === !negate;
-            } else {
-                return elementStable;
-            }
-        
-        });
+                if (elementStable) {
+                    const elementAttribute = await getElementValue(page, elementIdentifier);
+                    return (elementAttribute === elementValue) === !negate;
+                } else {
+                    return elementStable;
+                }
+            }, 
+            globalConfig,
+            { target: elementKey }
+        );
     }
 );
 
@@ -121,16 +129,18 @@ Then(
         const elementIdentifier = getElementLocator(page, elementKey, globalConfig);
 
         await waitFor( async () => {
-            const elementStable = await waitForSelector(page, elementIdentifier);
+                const elementStable = await waitForSelector(page, elementIdentifier);
 
-            if (elementStable) {
-                const isElementEnabled = await elementEnabled(page, elementIdentifier);
-                return isElementEnabled === !negate;
-            } else {
-                return elementStable;
-            }
-            
-        });
+                if (elementStable) {
+                    const isElementEnabled = await elementEnabled(page, elementIdentifier);
+                    return isElementEnabled === !negate;
+                } else {
+                    return elementStable;
+                }
+            }, 
+            globalConfig,
+            { target: elementKey }
+        );
     }
 );
 
@@ -147,16 +157,18 @@ Then(
         const index = Number(elementPosition.match(/\d/g)?.join('')) -1;
 
         await waitFor( async () => {
-            const elementStable = await waitForSelector(page, elementIdentifier);
+                const elementStable = await waitForSelector(page, elementIdentifier);
 
-            if (elementStable) {
-                const elementText = await getElementTextAtIndex(page, elementIdentifier, index);
-                return elementText?.includes(expectedElementText) === !negate;
-            } else {
-                return elementStable;
-            }
-            
-        });
+                if (elementStable) {
+                    const elementText = await getElementTextAtIndex(page, elementIdentifier, index);
+                    return elementText?.includes(expectedElementText) === !negate;
+                } else {
+                    return elementStable;
+                }
+            }, 
+            globalConfig,
+            { target: elementKey }
+        );
     }
 );
 
@@ -172,15 +184,17 @@ Then(
         const elementIdentifier = getElementLocator(page, elementKey, globalConfig);
 
         await waitFor( async () => {
-            const elementStable = await waitForSelector(page, elementIdentifier);
+                const elementStable = await waitForSelector(page, elementIdentifier);
 
-            if (elementStable) {
-                const attributeText = await getAttributeText(page, elementIdentifier, attribute);
-                return attributeText?.includes(expectedElementText) === !negate;
-            } else {
-                return elementStable;
-            }
-            
-        });
+                if (elementStable) {
+                    const attributeText = await getAttributeText(page, elementIdentifier, attribute);
+                    return attributeText?.includes(expectedElementText) === !negate;
+                } else {
+                    return elementStable;
+                }
+            }, 
+            globalConfig,
+            { target: elementKey }
+        );
     }
 );

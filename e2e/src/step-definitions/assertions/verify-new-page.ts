@@ -11,6 +11,7 @@ Then(
     /^the "([0-9]+th|[0-9]+st|[0-9]+nd|[0-9]+rd])" (?:tab|window) should( not)? contain the title "(.*)"$/,
     async function(this: ScenarioWorld, elementPosition: string, negate: boolean, expectedTitle: string) {
         const {
+            globalConfig,
             screen: { page, context },
         } = this;
         logger.log(`the ${elementPosition} tab|window should ${negate?'not':''}contain the title ${expectedTitle}`);
@@ -20,10 +21,13 @@ Then(
         await page.waitForTimeout(2000);
          
         await waitFor(async () => {
-            let pages = context.pages();
-            const pageTitle = await getTitleWithinPage(page, pages, pageIndex);
-            return pageTitle?.includes(expectedTitle) === !negate;
-        })
+                let pages = context.pages();
+                const pageTitle = await getTitleWithinPage(page, pages, pageIndex);
+                return pageTitle?.includes(expectedTitle) === !negate;
+            }, 
+            globalConfig,
+            { type: "title" }
+        );
     }
 );
 
@@ -40,10 +44,13 @@ Then(
         const elementIdentifier = getElementLocator(page, elementKey, globalConfig);
          
         await waitFor(async () => {
-            let pages = context.pages();
-            const isElementVisible = await getElementOnPage(page, elementIdentifier, pages, pageIndex) != null;
-            return isElementVisible === !negate;
-        });
+                let pages = context.pages();
+                const isElementVisible = await getElementOnPage(page, elementIdentifier, pages, pageIndex) != null;
+                return isElementVisible === !negate;
+            }, 
+            globalConfig,
+            { target: elementKey }
+        );
     }
 );
 
@@ -60,17 +67,20 @@ Then(
         const elementIdentifier = getElementLocator(page, elementKey, globalConfig);
          
         await waitFor(async () => {
-            let pages = context.pages();
+                let pages = context.pages();
 
-            const elementStable = await waitForSelectorOnPage(page, elementIdentifier, pages, pageIndex);
+                const elementStable = await waitForSelectorOnPage(page, elementIdentifier, pages, pageIndex);
 
-            if (elementStable) {
-                const elementText = await getElementTextWithinPage(page, elementIdentifier, pages, pageIndex);
-                return elementText?.includes(expectedElementText) === !negate;
-            } else {
-                return elementStable;
-            }
-        });
+                if (elementStable) {
+                    const elementText = await getElementTextWithinPage(page, elementIdentifier, pages, pageIndex);
+                    return elementText?.includes(expectedElementText) === !negate;
+                } else {
+                    return elementStable;
+                }
+            }, 
+            globalConfig,
+            { target: elementKey }
+        );
     }
 );
 
@@ -87,17 +97,19 @@ Then(
         const elementIdentifier = getElementLocator(page, elementKey, globalConfig);
          
         await waitFor(async () => {
-            let pages = context.pages();
+                let pages = context.pages();
 
-            const elementStable = await waitForSelectorOnPage(page, elementIdentifier, pages, pageIndex);
+                const elementStable = await waitForSelectorOnPage(page, elementIdentifier, pages, pageIndex);
 
-            if (elementStable) {
-                const elementText = await getElementTextWithinPage(page, elementIdentifier, pages, pageIndex);
-                return (elementText === expectedElementText) === !negate;
-            } else {
-                return elementStable;
-            }
-           
-        });
+                if (elementStable) {
+                    const elementText = await getElementTextWithinPage(page, elementIdentifier, pages, pageIndex);
+                    return (elementText === expectedElementText) === !negate;
+                } else {
+                    return elementStable;
+                }
+            }, 
+            globalConfig,
+            { target: elementKey }
+        );
     }
 );

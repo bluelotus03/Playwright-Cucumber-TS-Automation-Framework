@@ -9,7 +9,13 @@ export const getElementLocator = (
 ): ElementLocator => {
 
     const currentPage = getCurrentPageId(page, globalConfig);
-
     const { pageElementMappings } = globalConfig;
-    return pageElementMappings[currentPage]?.[elementKey] || pageElementMappings.common?.[elementKey];
+
+    const elementIdentifier = pageElementMappings[currentPage]?.[elementKey] || pageElementMappings.common?.[elementKey];
+
+    if (!elementIdentifier) {
+        throw Error('❗️ Unable to find the ${elementKey} mapping');
+    }
+
+    return elementIdentifier;
 };

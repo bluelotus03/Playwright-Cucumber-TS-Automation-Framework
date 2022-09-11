@@ -19,21 +19,22 @@ Then(
         logger.log(elementIdentifier+" tbody tr");
 
         await waitFor(async () => {
-            const elementStable = await waitForSelector(page, elementIdentifier);
+                const elementStable = await waitForSelector(page, elementIdentifier);
 
-            if (elementStable) {
-                const tableDataBefore = await getTableData(page, elementIdentifier);
+                if (elementStable) {
+                    const tableDataBefore = await getTableData(page, elementIdentifier);
 
-                logger.log("html table ", JSON.stringify(tableDataBefore));
-                logger.log("cucumber table ", JSON.stringify(dataTable.raw()));
+                    logger.log("html table ", JSON.stringify(tableDataBefore));
+                    logger.log("cucumber table ", JSON.stringify(dataTable.raw()));
 
-                return tableDataBefore === JSON.stringify(dataTable.raw()) === !negate;
+                    return tableDataBefore === JSON.stringify(dataTable.raw()) === !negate;
 
-            } else {
-                return elementStable;
-            }
-            
-        })
-
+                } else {
+                    return elementStable;
+                }
+            }, 
+            globalConfig,
+            { target: elementKey }
+        );
     }
 );

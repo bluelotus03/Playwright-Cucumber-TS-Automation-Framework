@@ -41,6 +41,7 @@ _dotenv["default"].config({
 var hostsConfig = (0, _parseEnv.getJsonFromFile)((0, _parseEnv.env)('HOSTS_URL_PATH'));
 var pagesConfig = (0, _parseEnv.getJsonFromFile)((0, _parseEnv.env)('PAGES_URL_PATH'));
 var emailsConfig = (0, _parseEnv.getJsonFromFile)((0, _parseEnv.env)('EMAILS_URL_PATH'));
+var errorsConfig = (0, _parseEnv.getJsonFromFile)((0, _parseEnv.env)('ERRORS_URL_PATH'));
 var mappingFiles = fs.readdirSync("".concat(process.cwd()).concat((0, _parseEnv.env)('PAGE_ELEMENTS_PATH')));
 
 var getEnvList = function getEnvList() {
@@ -62,6 +63,7 @@ var worldParameters = {
   hostsConfig: hostsConfig,
   pagesConfig: pagesConfig,
   emailsConfig: emailsConfig,
+  errorsConfig: errorsConfig,
   pageElementMappings: pageElementMappings
 };
 var common = "./src/features/**/*.feature                 --require-module ts-node/register                 --require ./src/step-definitions/**/*.ts                 --world-parameters ".concat(JSON.stringify(worldParameters), "                 -f json:./reports/report.json                 --format progress-bar                 --parallel ").concat((0, _parseEnv.env)('PARALLEL'), "                 --retry ").concat((0, _parseEnv.env)('RETRY'));

@@ -12,7 +12,13 @@ var getElementLocator = function getElementLocator(page, elementKey, globalConfi
 
   var currentPage = (0, _navigationBehavior.getCurrentPageId)(page, globalConfig);
   var pageElementMappings = globalConfig.pageElementMappings;
-  return ((_pageElementMappings$ = pageElementMappings[currentPage]) === null || _pageElementMappings$ === void 0 ? void 0 : _pageElementMappings$[elementKey]) || ((_pageElementMappings$2 = pageElementMappings.common) === null || _pageElementMappings$2 === void 0 ? void 0 : _pageElementMappings$2[elementKey]);
+  var elementIdentifier = ((_pageElementMappings$ = pageElementMappings[currentPage]) === null || _pageElementMappings$ === void 0 ? void 0 : _pageElementMappings$[elementKey]) || ((_pageElementMappings$2 = pageElementMappings.common) === null || _pageElementMappings$2 === void 0 ? void 0 : _pageElementMappings$2[elementKey]);
+
+  if (!elementIdentifier) {
+    throw Error('❗️ Unable to find the ${elementKey} mapping');
+  }
+
+  return elementIdentifier;
 };
 
 exports.getElementLocator = getElementLocator;

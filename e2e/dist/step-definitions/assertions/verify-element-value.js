@@ -65,7 +65,9 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                   }
                 }
               }, _callee);
-            })));
+            })), globalConfig, {
+              target: elementKey
+            });
 
           case 5:
           case "end":
@@ -125,7 +127,9 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                   }
                 }
               }, _callee3);
-            })));
+            })), globalConfig, {
+              target: elementKey
+            });
 
           case 5:
           case "end":
@@ -185,7 +189,9 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                   }
                 }
               }, _callee5);
-            })));
+            })), globalConfig, {
+              target: elementKey
+            });
 
           case 5:
           case "end":
@@ -245,7 +251,9 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                   }
                 }
               }, _callee7);
-            })));
+            })), globalConfig, {
+              target: elementKey
+            });
 
           case 5:
           case "end":
@@ -305,7 +313,9 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                   }
                 }
               }, _callee9);
-            })));
+            })), globalConfig, {
+              target: elementKey
+            });
 
           case 5:
           case "end":
@@ -368,7 +378,9 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                   }
                 }
               }, _callee11);
-            })));
+            })), globalConfig, {
+              target: elementKey
+            });
 
           case 6:
           case "end":
@@ -428,7 +440,9 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                   }
                 }
               }, _callee13);
-            })));
+            })), globalConfig, {
+              target: elementKey
+            });
 
           case 5:
           case "end":

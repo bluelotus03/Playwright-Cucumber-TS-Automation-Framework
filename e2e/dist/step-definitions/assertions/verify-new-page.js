@@ -18,13 +18,13 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
   var _ref = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee2(elementPosition, negate, expectedTitle) {
     var _elementPosition$matc;
 
-    var _this$screen, page, context, pageIndex;
+    var globalConfig, _this$screen, page, context, pageIndex;
 
     return regeneratorRuntime.wrap(function _callee2$(_context2) {
       while (1) {
         switch (_context2.prev = _context2.next) {
           case 0:
-            _this$screen = this.screen, page = _this$screen.page, context = _this$screen.context;
+            globalConfig = this.globalConfig, _this$screen = this.screen, page = _this$screen.page, context = _this$screen.context;
 
             _logger.logger.log("the ".concat(elementPosition, " tab|window should ").concat(negate ? 'not' : '', "contain the title ").concat(expectedTitle));
 
@@ -54,7 +54,9 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                   }
                 }
               }, _callee);
-            })));
+            })), globalConfig, {
+              type: "title"
+            });
 
           case 7:
           case "end":
@@ -106,7 +108,9 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                   }
                 }
               }, _callee3);
-            })));
+            })), globalConfig, {
+              target: elementKey
+            });
 
           case 6:
           case "end":
@@ -171,7 +175,9 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                   }
                 }
               }, _callee5);
-            })));
+            })), globalConfig, {
+              target: elementKey
+            });
 
           case 6:
           case "end":
@@ -236,7 +242,9 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                   }
                 }
               }, _callee7);
-            })));
+            })), globalConfig, {
+              target: elementKey
+            });
 
           case 6:
           case "end":

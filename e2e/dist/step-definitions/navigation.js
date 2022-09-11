@@ -30,6 +30,9 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
             _context.next = 6;
             return (0, _waitForBehavior.waitFor)(function () {
               return (0, _navigationBehavior.currentPathMatchesPageId)(page, pageId, globalConfig);
+            }, globalConfig, {
+              target: pageId,
+              type: 'page'
             });
 
           case 6:
@@ -58,6 +61,9 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
             _context2.next = 4;
             return (0, _waitForBehavior.waitFor)(function () {
               return (0, _navigationBehavior.currentPathMatchesPageId)(page, pageId, globalConfig);
+            }, globalConfig, {
+              target: pageId,
+              type: 'page'
             });
 
           case 4:
@@ -90,7 +96,9 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
             _context3.next = 6;
             return (0, _waitForBehavior.waitFor)(function () {
               return (0, _navigationBehavior.currentPathMatchesPageId)(page, pageId, globalConfig);
-            }, {
+            }, globalConfig, {
+              target: pageId,
+              type: 'page',
               timeout: 300000
             });
 

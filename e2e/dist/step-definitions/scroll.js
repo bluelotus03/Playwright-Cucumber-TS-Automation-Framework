@@ -57,7 +57,9 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                   }
                 }
               }, _callee);
-            })));
+            })), globalConfig, {
+              target: elementKey
+            });
 
           case 5:
           case "end":
