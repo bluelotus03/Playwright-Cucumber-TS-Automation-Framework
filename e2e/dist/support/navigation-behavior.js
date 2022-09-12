@@ -7,6 +7,8 @@ exports.reloadPage = exports.navigateToPage = exports.getCurrentPageId = exports
 
 var _index = require("../index");
 
+var _waitForBehavior = require("./wait-for-behavior");
+
 function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
 
 function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
@@ -54,7 +56,11 @@ var currentPathMatchesPageId = function currentPathMatchesPageId(page, pageId, g
   var _URL = new URL(page.url()),
       currentPath = _URL.pathname;
 
-  return pathMatchesPageId(currentPath, pageId, globalConfig);
+  if (pathMatchesPageId(currentPath, pageId, globalConfig)) {
+    return _waitForBehavior.waitForResult.PASS;
+  }
+
+  return _waitForBehavior.waitForResult.ELEMENT_NOT_AVAILABLE;
 };
 
 exports.currentPathMatchesPageId = currentPathMatchesPageId;

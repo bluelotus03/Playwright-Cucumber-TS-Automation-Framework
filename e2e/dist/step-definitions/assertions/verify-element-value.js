@@ -40,7 +40,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                       elementStable = _context.sent;
 
                       if (!elementStable) {
-                        _context.next = 12;
+                        _context.next = 16;
                         break;
                       }
 
@@ -54,19 +54,32 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
                       _logger.logger.debug("expectedElementText", expectedElementText);
 
-                      return _context.abrupt("return", (elementText === null || elementText === void 0 ? void 0 : elementText.includes(expectedElementText)) === !negate);
+                      if (!((elementText === null || elementText === void 0 ? void 0 : elementText.includes(expectedElementText)) === !negate)) {
+                        _context.next = 13;
+                        break;
+                      }
 
-                    case 12:
-                      return _context.abrupt("return", elementStable);
+                      return _context.abrupt("return", _waitForBehavior.waitForResult.PASS);
 
                     case 13:
+                      return _context.abrupt("return", _waitForBehavior.waitForResult.FAIL);
+
+                    case 14:
+                      _context.next = 17;
+                      break;
+
+                    case 16:
+                      return _context.abrupt("return", _waitForBehavior.waitForResult.ELEMENT_NOT_AVAILABLE);
+
+                    case 17:
                     case "end":
                       return _context.stop();
                   }
                 }
               }, _callee);
             })), globalConfig, {
-              target: elementKey
+              target: elementKey,
+              failureMessage: "\u2757\uFE0F Expected ".concat(elementKey, " to ").concat(negate ? 'not ' : '', "contain the text ").concat(expectedElementText)
             });
 
           case 5:
@@ -107,7 +120,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                       elementStable = _context3.sent;
 
                       if (!elementStable) {
-                        _context3.next = 10;
+                        _context3.next = 14;
                         break;
                       }
 
@@ -116,19 +129,33 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
                     case 6:
                       elementText = _context3.sent;
-                      return _context3.abrupt("return", elementText === expectedElementText === !negate);
 
-                    case 10:
-                      return _context3.abrupt("return", elementStable);
+                      if (!(elementText === expectedElementText === !negate)) {
+                        _context3.next = 11;
+                        break;
+                      }
+
+                      return _context3.abrupt("return", _waitForBehavior.waitForResult.PASS);
 
                     case 11:
+                      return _context3.abrupt("return", _waitForBehavior.waitForResult.FAIL);
+
+                    case 12:
+                      _context3.next = 15;
+                      break;
+
+                    case 14:
+                      return _context3.abrupt("return", _waitForBehavior.waitForResult.ELEMENT_NOT_AVAILABLE);
+
+                    case 15:
                     case "end":
                       return _context3.stop();
                   }
                 }
               }, _callee3);
             })), globalConfig, {
-              target: elementKey
+              target: elementKey,
+              failureMessage: "\u2757\uFE0F Expected ".concat(elementKey, " to ").concat(negate ? 'not ' : '', "equal the text ").concat(expectedElementText)
             });
 
           case 5:
@@ -152,7 +179,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
           case 0:
             page = this.screen.page, globalConfig = this.globalConfig;
 
-            _logger.logger.log("the ".concat(elementKey, " should ").concat(negate ? 'not ' : '', "equal the text ").concat(elementValue));
+            _logger.logger.log("the ".concat(elementKey, " should ").concat(negate ? 'not ' : '', "contain the value ").concat(elementValue));
 
             elementIdentifier = (0, _webElementHelper.getElementLocator)(page, elementKey, globalConfig);
             _context6.next = 5;
@@ -169,7 +196,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                       elementStable = _context5.sent;
 
                       if (!elementStable) {
-                        _context5.next = 10;
+                        _context5.next = 14;
                         break;
                       }
 
@@ -178,19 +205,33 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
                     case 6:
                       elementAttribute = _context5.sent;
-                      return _context5.abrupt("return", (elementAttribute === null || elementAttribute === void 0 ? void 0 : elementAttribute.includes(elementValue)) === !negate);
 
-                    case 10:
-                      return _context5.abrupt("return", elementStable);
+                      if (!((elementAttribute === null || elementAttribute === void 0 ? void 0 : elementAttribute.includes(elementValue)) === !negate)) {
+                        _context5.next = 11;
+                        break;
+                      }
+
+                      return _context5.abrupt("return", _waitForBehavior.waitForResult.PASS);
 
                     case 11:
+                      return _context5.abrupt("return", _waitForBehavior.waitForResult.FAIL);
+
+                    case 12:
+                      _context5.next = 15;
+                      break;
+
+                    case 14:
+                      return _context5.abrupt("return", _waitForBehavior.waitForResult.ELEMENT_NOT_AVAILABLE);
+
+                    case 15:
                     case "end":
                       return _context5.stop();
                   }
                 }
               }, _callee5);
             })), globalConfig, {
-              target: elementKey
+              target: elementKey,
+              failureMessage: "\u2757\uFE0F Expected ".concat(elementKey, " to ").concat(negate ? 'not ' : '', "contain the value ").concat(elementValue)
             });
 
           case 5:
@@ -214,7 +255,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
           case 0:
             page = this.screen.page, globalConfig = this.globalConfig;
 
-            _logger.logger.log("the ".concat(elementKey, " should ").concat(negate ? 'not ' : '', "equal the text ").concat(elementValue));
+            _logger.logger.log("the ".concat(elementKey, " should ").concat(negate ? 'not ' : '', "equal the value ").concat(elementValue));
 
             elementIdentifier = (0, _webElementHelper.getElementLocator)(page, elementKey, globalConfig);
             _context8.next = 5;
@@ -231,7 +272,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                       elementStable = _context7.sent;
 
                       if (!elementStable) {
-                        _context7.next = 10;
+                        _context7.next = 14;
                         break;
                       }
 
@@ -240,19 +281,33 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
                     case 6:
                       elementAttribute = _context7.sent;
-                      return _context7.abrupt("return", elementAttribute === elementValue === !negate);
 
-                    case 10:
-                      return _context7.abrupt("return", elementStable);
+                      if (!(elementAttribute === elementValue === !negate)) {
+                        _context7.next = 11;
+                        break;
+                      }
+
+                      return _context7.abrupt("return", _waitForBehavior.waitForResult.PASS);
 
                     case 11:
+                      return _context7.abrupt("return", _waitForBehavior.waitForResult.FAIL);
+
+                    case 12:
+                      _context7.next = 15;
+                      break;
+
+                    case 14:
+                      return _context7.abrupt("return", _waitForBehavior.waitForResult.ELEMENT_NOT_AVAILABLE);
+
+                    case 15:
                     case "end":
                       return _context7.stop();
                   }
                 }
               }, _callee7);
             })), globalConfig, {
-              target: elementKey
+              target: elementKey,
+              failureMessage: "\u2757\uFE0F Expected ".concat(elementKey, " to ").concat(negate ? 'not ' : '', "equal the value ").concat(elementValue)
             });
 
           case 5:
@@ -293,7 +348,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                       elementStable = _context9.sent;
 
                       if (!elementStable) {
-                        _context9.next = 10;
+                        _context9.next = 14;
                         break;
                       }
 
@@ -302,19 +357,33 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
                     case 6:
                       isElementEnabled = _context9.sent;
-                      return _context9.abrupt("return", isElementEnabled === !negate);
 
-                    case 10:
-                      return _context9.abrupt("return", elementStable);
+                      if (!(isElementEnabled === !negate)) {
+                        _context9.next = 11;
+                        break;
+                      }
+
+                      return _context9.abrupt("return", _waitForBehavior.waitForResult.PASS);
 
                     case 11:
+                      return _context9.abrupt("return", _waitForBehavior.waitForResult.FAIL);
+
+                    case 12:
+                      _context9.next = 15;
+                      break;
+
+                    case 14:
+                      return _context9.abrupt("return", _waitForBehavior.waitForResult.ELEMENT_NOT_AVAILABLE);
+
+                    case 15:
                     case "end":
                       return _context9.stop();
                   }
                 }
               }, _callee9);
             })), globalConfig, {
-              target: elementKey
+              target: elementKey,
+              failureMessage: "\u2757\uFE0F Expected ".concat(elementKey, " to ").concat(negate ? 'not ' : '', "be enabled")
             });
 
           case 5:
@@ -358,7 +427,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                       elementStable = _context11.sent;
 
                       if (!elementStable) {
-                        _context11.next = 10;
+                        _context11.next = 14;
                         break;
                       }
 
@@ -367,19 +436,33 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
                     case 6:
                       elementText = _context11.sent;
-                      return _context11.abrupt("return", (elementText === null || elementText === void 0 ? void 0 : elementText.includes(expectedElementText)) === !negate);
 
-                    case 10:
-                      return _context11.abrupt("return", elementStable);
+                      if (!((elementText === null || elementText === void 0 ? void 0 : elementText.includes(expectedElementText)) === !negate)) {
+                        _context11.next = 11;
+                        break;
+                      }
+
+                      return _context11.abrupt("return", _waitForBehavior.waitForResult.PASS);
 
                     case 11:
+                      return _context11.abrupt("return", _waitForBehavior.waitForResult.FAIL);
+
+                    case 12:
+                      _context11.next = 15;
+                      break;
+
+                    case 14:
+                      return _context11.abrupt("return", _waitForBehavior.waitForResult.ELEMENT_NOT_AVAILABLE);
+
+                    case 15:
                     case "end":
                       return _context11.stop();
                   }
                 }
               }, _callee11);
             })), globalConfig, {
-              target: elementKey
+              target: elementKey,
+              failureMessage: "\u2757\uFE0F Expected ".concat(elementPosition, " ").concat(elementKey, " to ").concat(negate ? 'not ' : '', "contain the text ").concat(expectedElementText)
             });
 
           case 6:
@@ -420,7 +503,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                       elementStable = _context13.sent;
 
                       if (!elementStable) {
-                        _context13.next = 10;
+                        _context13.next = 14;
                         break;
                       }
 
@@ -429,19 +512,33 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
                     case 6:
                       attributeText = _context13.sent;
-                      return _context13.abrupt("return", (attributeText === null || attributeText === void 0 ? void 0 : attributeText.includes(expectedElementText)) === !negate);
 
-                    case 10:
-                      return _context13.abrupt("return", elementStable);
+                      if (!((attributeText === null || attributeText === void 0 ? void 0 : attributeText.includes(expectedElementText)) === !negate)) {
+                        _context13.next = 11;
+                        break;
+                      }
+
+                      return _context13.abrupt("return", _waitForBehavior.waitForResult.PASS);
 
                     case 11:
+                      return _context13.abrupt("return", _waitForBehavior.waitForResult.FAIL);
+
+                    case 12:
+                      _context13.next = 15;
+                      break;
+
+                    case 14:
+                      return _context13.abrupt("return", _waitForBehavior.waitForResult.ELEMENT_NOT_AVAILABLE);
+
+                    case 15:
                     case "end":
                       return _context13.stop();
                   }
                 }
               }, _callee13);
             })), globalConfig, {
-              target: elementKey
+              target: elementKey,
+              failureMessage: "\u2757\uFE0F Expected ".concat(elementKey, " ").concat(attribute, " attribute to ").concat(negate ? 'not ' : '', "contain the text ").concat(expectedElementText)
             });
 
           case 5:

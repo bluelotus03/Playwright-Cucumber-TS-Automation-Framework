@@ -45,7 +45,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                       elementStable = _context.sent;
 
                       if (!elementStable) {
-                        _context.next = 7;
+                        _context.next = 8;
                         break;
                       }
 
@@ -53,9 +53,12 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                       return (0, _htmlBehavior.inputValueOnPage)(pages, pageIndex, elementIdentifier, inputValue);
 
                     case 7:
-                      return _context.abrupt("return", elementStable);
+                      return _context.abrupt("return", _waitForBehavior.waitForResult.PASS);
 
                     case 8:
+                      return _context.abrupt("return", _waitForBehavior.waitForResult.ELEMENT_NOT_AVAILABLE);
+
+                    case 9:
                     case "end":
                       return _context.stop();
                   }

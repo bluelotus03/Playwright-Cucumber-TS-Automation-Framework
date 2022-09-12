@@ -43,7 +43,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                       elementStable = _context.sent;
 
                       if (!elementStable) {
-                        _context.next = 12;
+                        _context.next = 16;
                         break;
                       }
 
@@ -57,19 +57,32 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
                       _logger.logger.log("cucumber table ", JSON.stringify(dataTable.raw()));
 
-                      return _context.abrupt("return", tableDataBefore === JSON.stringify(dataTable.raw()) === !negate);
+                      if (!(tableDataBefore === JSON.stringify(dataTable.raw()) === !negate)) {
+                        _context.next = 13;
+                        break;
+                      }
 
-                    case 12:
-                      return _context.abrupt("return", elementStable);
+                      return _context.abrupt("return", _waitForBehavior.waitForResult.PASS);
 
                     case 13:
+                      return _context.abrupt("return", _waitForBehavior.waitForResult.FAIL);
+
+                    case 14:
+                      _context.next = 17;
+                      break;
+
+                    case 16:
+                      return _context.abrupt("return", _waitForBehavior.waitForResult.ELEMENT_NOT_AVAILABLE);
+
+                    case 17:
                     case "end":
                       return _context.stop();
                   }
                 }
               }, _callee);
             })), globalConfig, {
-              target: elementKey
+              target: elementKey,
+              failureMessage: "\u2757\uFE0F Expected ".concat(elementKey, " table to ").concat(negate ? 'not ' : '', "equal ").concat(dataTable.raw())
             });
 
           case 6:

@@ -42,7 +42,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                       elementStable = _context.sent;
 
                       if (!elementStable) {
-                        _context.next = 7;
+                        _context.next = 8;
                         break;
                       }
 
@@ -51,9 +51,12 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                       return (0, _htmlBehavior.inputElementValue)(page, elementIdentifier, parsedInput);
 
                     case 7:
-                      return _context.abrupt("return", elementStable);
+                      return _context.abrupt("return", _waitForBehavior.waitForResult.PASS);
 
                     case 8:
+                      return _context.abrupt("return", _waitForBehavior.waitForResult.ELEMENT_NOT_AVAILABLE);
+
+                    case 9:
                     case "end":
                       return _context.stop();
                   }
@@ -101,7 +104,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                       elementStable = _context3.sent;
 
                       if (!elementStable) {
-                        _context3.next = 6;
+                        _context3.next = 7;
                         break;
                       }
 
@@ -109,8 +112,10 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                       return (0, _htmlBehavior.selectElementValue)(page, elementIdentifier, option);
 
                     case 6:
-                      ;
-                      return _context3.abrupt("return", elementStable);
+                      return _context3.abrupt("return", _waitForBehavior.waitForResult.PASS);
+
+                    case 7:
+                      return _context3.abrupt("return", _waitForBehavior.waitForResult.ELEMENT_NOT_AVAILABLE);
 
                     case 8:
                     case "end":

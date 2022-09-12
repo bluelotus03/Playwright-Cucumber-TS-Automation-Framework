@@ -39,16 +39,26 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                     case 2:
                       _context.t0 = _context.sent;
                       isElementVisible = _context.t0 != null;
-                      return _context.abrupt("return", isElementVisible === !negate);
 
-                    case 5:
+                      if (!(isElementVisible === !negate)) {
+                        _context.next = 8;
+                        break;
+                      }
+
+                      return _context.abrupt("return", _waitForBehavior.waitForResult.PASS);
+
+                    case 8:
+                      return _context.abrupt("return", _waitForBehavior.waitForResult.ELEMENT_NOT_AVAILABLE);
+
+                    case 9:
                     case "end":
                       return _context.stop();
                   }
                 }
               }, _callee);
             })), globalConfig, {
-              target: elementKey
+              target: elementKey,
+              failureMessage: "\u2757\uFE0F Expected ".concat(elementKey, " to ").concat(negate ? 'not ' : '', "be displayed")
             });
 
           case 5:
@@ -91,16 +101,26 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                     case 2:
                       _context3.t0 = _context3.sent;
                       isElementVisible = _context3.t0 != null;
-                      return _context3.abrupt("return", isElementVisible === !negate);
 
-                    case 5:
+                      if (!(isElementVisible === !negate)) {
+                        _context3.next = 8;
+                        break;
+                      }
+
+                      return _context3.abrupt("return", _waitForBehavior.waitForResult.PASS);
+
+                    case 8:
+                      return _context3.abrupt("return", _waitForBehavior.waitForResult.ELEMENT_NOT_AVAILABLE);
+
+                    case 9:
                     case "end":
                       return _context3.stop();
                   }
                 }
               }, _callee3);
             })), globalConfig, {
-              target: elementKey
+              target: elementKey,
+              failureMessage: "\u2757\uFE0F Expected ".concat(elementPosition, " ").concat(elementKey, " to ").concat(negate ? 'not ' : '', "be displayed")
             });
 
           case 6:
@@ -139,16 +159,26 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
                     case 2:
                       element = _context5.sent;
-                      return _context5.abrupt("return", Number(count) === element.length === !negate);
 
-                    case 4:
+                      if (!(Number(count) === element.length === !negate)) {
+                        _context5.next = 7;
+                        break;
+                      }
+
+                      return _context5.abrupt("return", _waitForBehavior.waitForResult.PASS);
+
+                    case 7:
+                      return _context5.abrupt("return", _waitForBehavior.waitForResult.ELEMENT_NOT_AVAILABLE);
+
+                    case 8:
                     case "end":
                       return _context5.stop();
                   }
                 }
               }, _callee5);
             })), globalConfig, {
-              target: elementKey
+              target: elementKey,
+              failureMessage: "\u2757\uFE0F Expected ".concat(count, " ").concat(elementKey, " to ").concat(negate ? 'not ' : '', "be displayed")
             });
 
           case 5:

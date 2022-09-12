@@ -40,12 +40,12 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                       elementStable = _context.sent;
 
                       if (!elementStable) {
-                        _context.next = 11;
+                        _context.next = 13;
                         break;
                       }
 
                       if (!unchecked) {
-                        _context.next = 9;
+                        _context.next = 10;
                         break;
                       }
 
@@ -53,17 +53,19 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                       return (0, _htmlBehavior.uncheckElement)(page, elementIdentifier);
 
                     case 7:
-                      _context.next = 11;
-                      break;
+                      return _context.abrupt("return", _waitForBehavior.waitForResult.PASS);
 
-                    case 9:
-                      _context.next = 11;
+                    case 10:
+                      _context.next = 12;
                       return (0, _htmlBehavior.checkElement)(page, elementIdentifier);
 
-                    case 11:
-                      return _context.abrupt("return", elementStable);
-
                     case 12:
+                      return _context.abrupt("return", _waitForBehavior.waitForResult.PASS);
+
+                    case 13:
+                      return _context.abrupt("return", _waitForBehavior.waitForResult.ELEMENT_NOT_AVAILABLE);
+
+                    case 14:
                     case "end":
                       return _context.stop();
                   }

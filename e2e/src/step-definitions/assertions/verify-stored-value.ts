@@ -2,7 +2,7 @@ import { Then } from '@cucumber/cucumber';
 import { ElementKey } from '../../env/global';
 import { getElementLocator } from '../../support/web-element-helper';
 import { ScenarioWorld } from "../setup/world";
-import { waitFor, waitForSelector } from '../../support/wait-for-behavior';
+import { waitFor, waitForResult, waitForSelector } from '../../support/wait-for-behavior';
 import { logger } from '../../logger';
 import { getElementText } from '../../support/html-behavior';
 
@@ -20,17 +20,22 @@ Then(
         
         await waitFor( async () => {
                 const elementStable = await waitForSelector(page, elementIdentifier);
-                //const variableValue = globalVariables[variableKey];
+                const variableValue = ''//TODO: should be globalVariables[variableKey];
 
                 if (elementStable) {
                     const elementText = await getElementText(page, elementIdentifier);
-                    //return (elementText === variableValue) === !negate;
+                    if ((elementText === variableValue) === !negate) {
+                        return waitForResult.PASS;
+                    } else {
+                        return waitForResult.FAIL;
+                    }
+                    
                 } else {
-                    return elementStable;
+                    return waitForResult.ELEMENT_NOT_AVAILABLE;
                 }
             }, 
             globalConfig,
-            { target: elementKey }
+            { target: elementKey, failureMessage: `❗️ Expected ${elementKey} to ${negate?'not ':''}equal ${variableKey} stored in global variables` }
         );
     }
 );
@@ -49,17 +54,21 @@ Then(
         
         await waitFor( async () => {
                 const elementStable = await waitForSelector(page, elementIdentifier);
-                //const variableValue = globalVariables[variableKey];
+                const variableValue = ''//TODO: should be globalVariables[variableKey];
 
                 if (elementStable) {
                     const elementText = await getElementText(page, elementIdentifier);
-                    //return elementText?.includes(variableValue) === !negate;
+                    if (elementText?.includes(variableValue) === !negate) {
+                        return waitForResult.PASS;
+                    } else {
+                        return waitForResult.FAIL;
+                    }
                 } else {
-                    return elementStable;
+                    return waitForResult.ELEMENT_NOT_AVAILABLE;
                 }
             }, 
             globalConfig,
-            { target: elementKey }
+            { target: elementKey, failureMessage: `❗️ Expected ${elementKey} to ${negate?'not ':''}contain the ${variableKey} stored in global variables` }
         );
     }
 );

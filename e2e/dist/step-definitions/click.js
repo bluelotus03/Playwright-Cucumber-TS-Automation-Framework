@@ -36,7 +36,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                       elementIdentifier = (0, _webElementHelper.getElementLocator)(page, elementKey, globalConfig);
 
                       if (!elementIdentifier) {
-                        _context.next = 4;
+                        _context.next = 5;
                         break;
                       }
 
@@ -44,10 +44,13 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                       return (0, _htmlBehavior.clickElement)(page, elementIdentifier);
 
                     case 4:
-                      ;
-                      return _context.abrupt("return", elementIdentifier);
+                      return _context.abrupt("return", _waitForBehavior.waitForResult.PASS);
 
-                    case 6:
+                    case 5:
+                      ;
+                      return _context.abrupt("return", _waitForBehavior.waitForResult.ELEMENT_NOT_AVAILABLE);
+
+                    case 7:
                     case "end":
                       return _context.stop();
                   }
@@ -94,7 +97,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                       elementIdentifier = (0, _webElementHelper.getElementLocator)(page, elementKey, globalConfig);
 
                       if (!elementIdentifier) {
-                        _context3.next = 4;
+                        _context3.next = 5;
                         break;
                       }
 
@@ -102,10 +105,13 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                       return (0, _htmlBehavior.clickElementAtIndex)(page, elementIdentifier, pageIndex);
 
                     case 4:
-                      ;
-                      return _context3.abrupt("return", elementIdentifier);
+                      return _context3.abrupt("return", _waitForBehavior.waitForResult.PASS);
 
-                    case 6:
+                    case 5:
+                      ;
+                      return _context3.abrupt("return", _waitForBehavior.waitForResult.ELEMENT_NOT_AVAILABLE);
+
+                    case 7:
                     case "end":
                       return _context3.stop();
                   }
