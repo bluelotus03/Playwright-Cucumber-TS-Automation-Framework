@@ -1,7 +1,7 @@
 Feature: As a user I can interact with login forms
 # Course did not go over successful password implementation, only email. Will need to look further into this.
 
-    @todo
+    @dev
     #@smoke @regression 
     Scenario: As a user I can interact and assert on login forms with localhost creds
         Given I am on the "home" page
