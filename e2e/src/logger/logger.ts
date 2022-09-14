@@ -1,14 +1,14 @@
-import { env } from "../env/parseEnv";
+import { env } from "../env/parseEnv"
 
-const DEBUG = 'debug';
-const LOG = 'log';
-const ERROR ='error';
-const OFF = 'off';
+const DEBUG = 'debug'
+const LOG = 'log'
+const ERROR ='error'
+const OFF = 'off'
 
-const LOG_LEVELS = [DEBUG, LOG, ERROR, OFF] as const;
-export type LogLevel = typeof LOG_LEVELS[number];
+const LOG_LEVELS = [DEBUG, LOG, ERROR, OFF] as const
+export type LogLevel = typeof LOG_LEVELS[number]
 
-type LogFunction = (...msg: any[]) => void;
+type LogFunction = (...msg: any[]) => void
 
 type Logger = {
     debug: LogFunction,
@@ -20,18 +20,18 @@ const logFuncAtLevels =
     (logLevels: LogLevel[], LogFunction: Logger = console) =>
         (logLevel: LogLevel, ...msg: any[]) => {
             if (logLevel !== OFF && logLevels.indexOf(logLevel) !== -1 && msg.length >0) {
-                LogFunction[logLevel](...msg);
+                LogFunction[logLevel](...msg)
             }
-        };
+        }
 
 const getLogLevel = (logLevel: LogLevel): LogLevel[] => {
-    const dynamicLogLevelIndex = LOG_LEVELS.indexOf(logLevel);
-    return LOG_LEVELS.slice(dynamicLogLevelIndex);
+    const dynamicLogLevelIndex = LOG_LEVELS.indexOf(logLevel)
+    return LOG_LEVELS.slice(dynamicLogLevelIndex)
 }
 
 const createLogger = (logLevel: LogLevel): Logger => {
-    const activeLogLevels = getLogLevel(logLevel);
-    const logger = logFuncAtLevels(activeLogLevels);
+    const activeLogLevels = getLogLevel(logLevel)
+    const logger = logFuncAtLevels(activeLogLevels)
 
     return LOG_LEVELS.reduce(
         (accumulator: Record<string, LogFunction>, level:LogLevel) => ({
@@ -39,11 +39,11 @@ const createLogger = (logLevel: LogLevel): Logger => {
             [level]: (...msg: any[]) => logger(level, ...msg),
         }),
         {}
-    ) as Logger;
+    ) as Logger
 }
 
 const logLevelIsT = <T extends string>(logLevel: string, options: readonly string[]):logLevel is T => {
-    return options.includes(logLevel);
+    return options.includes(logLevel)
 }
 
 export const stringIsOfOptions = <T extends string>(logLevel: string, options: readonly string[]): T => {
@@ -53,13 +53,13 @@ export const stringIsOfOptions = <T extends string>(logLevel: string, options: r
     throw Error(`❗️ Logger ${logLevel} needs to be one of ${options}`)
 }
 
-let loggerSingleton: Logger | null = null;
+let loggerSingleton: Logger | null = null
 export const getLogger = (): Logger => {
     if (!loggerSingleton) {
-        const logLevel = env('LOG_LEVEL');
-        const validLogLevel = stringIsOfOptions<LogLevel>(logLevel, LOG_LEVELS);
-        loggerSingleton = createLogger(validLogLevel);
+        const logLevel = env('LOG_LEVEL')
+        const validLogLevel = stringIsOfOptions<LogLevel>(logLevel, LOG_LEVELS)
+        loggerSingleton = createLogger(validLogLevel)
     }
 
-    return loggerSingleton;
+    return loggerSingleton
 }

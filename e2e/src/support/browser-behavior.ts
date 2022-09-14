@@ -1,12 +1,12 @@
-import { devices } from "playwright";
-import { envNumber } from "../env/parseEnv";
+import { devices } from "playwright"
+import { envNumber } from "../env/parseEnv"
 
 export const getViewport = (): { width: number, height: number } => {
-    let viewport;
-    const emulation = process.env.EMULATION || "browser";
+    let viewport
+    const emulation = process.env.EMULATION || "browser"
 
     if (emulation != "browser") {
-        const device = devices[emulation];
+        const device = devices[emulation]
         viewport = {
             width: device.viewport.width,
             height: device.viewport.height
@@ -17,6 +17,5 @@ export const getViewport = (): { width: number, height: number } => {
             height: envNumber('BROWSER_HEIGHT')
         }
     }
-
-    return viewport;
+    return viewport
 }

@@ -1,10 +1,10 @@
-import { When } from '@cucumber/cucumber';
-import { ScenarioWorld } from './setup/world';
-import { clickElement, clickElementAtIndex } from '../support/html-behavior';
-import { waitFor, waitForResult, waitForSelector } from '../support/wait-for-behavior';
-import { getElementLocator } from '../support/web-element-helper';
-import { ElementKey } from '../env/global';
-import { logger } from '../logger';
+import { When } from '@cucumber/cucumber'
+import { ScenarioWorld } from './setup/world'
+import { clickElement, clickElementAtIndex } from '../support/html-behavior'
+import { waitFor, waitForResult, waitForSelector } from '../support/wait-for-behavior'
+import { getElementLocator } from '../support/web-element-helper'
+import { ElementKey } from '../env/global'
+import { logger } from '../logger'
 
 When(
     /^I click the "([^"]*)" (?:button|link|icon|element)$/,
@@ -12,26 +12,25 @@ When(
         const {
             screen: { page },
             globalConfig,
-        } = this;
-        logger.log(`I click the ${elementKey} (?:button|link|icon|element)`);
+        } = this
+        logger.log(`I click the ${elementKey} (?:button|link|icon|element)`)
 
-        const elementIdentifier = getElementLocator(page, elementKey, globalConfig);
+        const elementIdentifier = getElementLocator(page, elementKey, globalConfig)
 
         await waitFor(async () => {
-                const elementIdentifier = getElementLocator(page, elementKey, globalConfig);
+                const elementStable = await waitForSelector(page, elementIdentifier)
 
-                if (elementIdentifier) {
-                    await clickElement(page, elementIdentifier);
-                    return waitForResult.PASS;
+                if (elementStable) {
+                    await clickElement(page, elementIdentifier)
+                    return waitForResult.PASS
                 };
-
-                return waitForResult.ELEMENT_NOT_AVAILABLE;
+                return waitForResult.ELEMENT_NOT_AVAILABLE
             }, 
             globalConfig,
             { target: elementKey }
-        );
+        )
     }
-);
+)
 
 When(
     /^I click the "([0-9]+th|[0-9]+st|[0-9]+nd|[0-9]+rd)" "([^"]*)" (?:button|link|icon|element)$/,
@@ -39,24 +38,23 @@ When(
         const {
             screen: { page },
             globalConfig,
-        } = this;
-        logger.log(`I click the ${elementPosition} ${elementKey} (?:button|link|icon|element)`);
+        } = this
+        logger.log(`I click the ${elementPosition} ${elementKey} (?:button|link|icon|element)`)
 
-        const elementIdentifier = getElementLocator(page, elementKey, globalConfig);
-        const pageIndex = Number(elementPosition.match(/\d/g)?.join('')) -1;
+        const elementIdentifier = getElementLocator(page, elementKey, globalConfig)
+        const pageIndex = Number(elementPosition.match(/\d/g)?.join('')) -1
 
         await waitFor(async () => {
-                const elementIdentifier = getElementLocator(page, elementKey, globalConfig);
+            const elementStable = await waitForSelector(page, elementIdentifier)
 
-                if (elementIdentifier) {
-                    await clickElementAtIndex(page, elementIdentifier, pageIndex);
-                    return waitForResult.PASS;
-                };
-
-                return waitForResult.ELEMENT_NOT_AVAILABLE;
+                if (elementStable) {
+                    await clickElementAtIndex(page, elementIdentifier, pageIndex)
+                    return waitForResult.PASS
+                }
+                return waitForResult.ELEMENT_NOT_AVAILABLE
             }, 
             globalConfig,
             { target: elementKey }
-        );
+        )
     }
-);
+)

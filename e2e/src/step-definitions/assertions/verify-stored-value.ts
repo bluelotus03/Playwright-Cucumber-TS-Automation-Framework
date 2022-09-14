@@ -1,10 +1,10 @@
-import { Then } from '@cucumber/cucumber';
-import { ElementKey } from '../../env/global';
-import { getElementLocator } from '../../support/web-element-helper';
-import { ScenarioWorld } from "../setup/world";
-import { waitFor, waitForResult, waitForSelector } from '../../support/wait-for-behavior';
-import { logger } from '../../logger';
-import { getElementText } from '../../support/html-behavior';
+import { Then } from '@cucumber/cucumber'
+import { ElementKey } from '../../env/global'
+import { getElementLocator } from '../../support/web-element-helper'
+import { ScenarioWorld } from "../setup/world"
+import { waitFor, waitForResult, waitForSelector } from '../../support/wait-for-behavior'
+import { logger } from '../../logger'
+import { getElementText } from '../../support/html-behavior'
 
 Then(
     /^the "([^"]*)" should( not)? equal "([^"]*)" stored in global variables$/,
@@ -13,32 +13,33 @@ Then(
             screen: { page },
             globalConfig,
             //globalVariables,
-        } = this;
-        //logger.log(`the ${elementKey} should ${negate?'not ':''}equal ${globalVariables[variableKey]} stored in global variables`);
+        } = this
+        //logger.log(`the ${elementKey} should ${negate?'not ':''}equal ${globalVariables[variableKey]} stored in global variables`)
 
-        const elementIdentifier = getElementLocator(page, elementKey, globalConfig);
+        const elementIdentifier = getElementLocator(page, elementKey, globalConfig)
         
         await waitFor( async () => {
-                const elementStable = await waitForSelector(page, elementIdentifier);
-                const variableValue = ''//TODO: should be globalVariables[variableKey];
+                const elementStable = await waitForSelector(page, elementIdentifier)
+                const variableValue = ''//TODO: should be globalVariables[variableKey]
 
                 if (elementStable) {
-                    const elementText = await getElementText(page, elementIdentifier);
+                    const elementText = await getElementText(page, elementIdentifier)
+                    
                     if ((elementText === variableValue) === !negate) {
-                        return waitForResult.PASS;
+                        return waitForResult.PASS
                     } else {
-                        return waitForResult.FAIL;
+                        return waitForResult.FAIL
                     }
                     
                 } else {
-                    return waitForResult.ELEMENT_NOT_AVAILABLE;
+                    return waitForResult.ELEMENT_NOT_AVAILABLE
                 }
             }, 
             globalConfig,
             { target: elementKey, failureMessage: `❗️ Expected ${elementKey} to ${negate?'not ':''}equal ${variableKey} stored in global variables` }
-        );
+        )
     }
-);
+)
 
 Then(
     /^the "([^"]*)" should( not)? contain the "([^"]*)" stored in global variables$/,
@@ -47,28 +48,29 @@ Then(
             screen: { page },
             globalConfig,
             //globalVariables,
-        } = this;
-        //logger.log(`the ${elementKey} should ${negate?'not ':''}contain the ${globalVariables[variableKey]} stored in global variables`);
+        } = this
+        //logger.log(`the ${elementKey} should ${negate?'not ':''}contain the ${globalVariables[variableKey]} stored in global variables`)
 
-        const elementIdentifier = getElementLocator(page, elementKey, globalConfig);
+        const elementIdentifier = getElementLocator(page, elementKey, globalConfig)
         
         await waitFor( async () => {
-                const elementStable = await waitForSelector(page, elementIdentifier);
-                const variableValue = ''//TODO: should be globalVariables[variableKey];
+                const elementStable = await waitForSelector(page, elementIdentifier)
+                const variableValue = ''//TODO: should be globalVariables[variableKey]
 
                 if (elementStable) {
-                    const elementText = await getElementText(page, elementIdentifier);
+                    const elementText = await getElementText(page, elementIdentifier)
+
                     if (elementText?.includes(variableValue) === !negate) {
-                        return waitForResult.PASS;
+                        return waitForResult.PASS
                     } else {
-                        return waitForResult.FAIL;
+                        return waitForResult.FAIL
                     }
                 } else {
-                    return waitForResult.ELEMENT_NOT_AVAILABLE;
+                    return waitForResult.ELEMENT_NOT_AVAILABLE
                 }
             }, 
             globalConfig,
             { target: elementKey, failureMessage: `❗️ Expected ${elementKey} to ${negate?'not ':''}contain the ${variableKey} stored in global variables` }
-        );
+        )
     }
-);
+)

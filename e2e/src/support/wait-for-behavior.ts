@@ -1,8 +1,8 @@
-import { Frame, Page } from "playwright";
-import { ElementLocator, GlobalConfig, WaitForTarget, WaitForTargetType } from "../env/global";
-import { envNumber } from "../env/parseEnv";
-import { handleError } from "./error-helper";
-import { logger } from '../logger';
+import { Frame, Page } from "playwright"
+import { ElementLocator, GlobalConfig, WaitForTarget, WaitForTargetType } from "../env/global"
+import { envNumber } from "../env/parseEnv"
+import { handleError } from "./error-helper"
+import { logger } from '../logger'
 
 export const enum waitForResult {
     PASS = 1,
@@ -20,38 +20,38 @@ export const waitFor = async<T>(
     globalConfig: GlobalConfig,
     options?: { timeout?:number; wait?: number; target?: WaitForTarget; type?: WaitForTargetType, failureMessage?: string }
 ): Promise<void> => {
-    const { timeout = 10000, wait=2000, target = '', type = 'element' } = options || {};
+    const { timeout = 10000, wait=2000, target = '', type = 'element' } = options || {}
 
-    const sleep = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
-    const startDate = new Date();
-    let notAvailableContext: string | undefined;
+    const sleep = (ms: number) => new Promise(resolve => setTimeout(resolve, ms))
+    const startDate = new Date()
+    let notAvailableContext: string | undefined
 
     try {
         while (new Date().getTime() - startDate.getTime() < timeout) {
-            const result = await predicate();
-                let resultAs: waitForResult;
+            const result = await predicate()
+                let resultAs: waitForResult
 
                 if ((result as waitForResultWithContext).result) {
-                    notAvailableContext = (result as waitForResultWithContext).replace;
-                    resultAs = (result as waitForResultWithContext).result;
+                    notAvailableContext = (result as waitForResultWithContext).replace
+                    resultAs = (result as waitForResultWithContext).result
                 } else {
-                    resultAs = result as waitForResult;
+                    resultAs = result as waitForResult
                 }
 
                 if (resultAs === waitForResult.PASS) {
                     return;
                 } else if (resultAs === waitForResult.FAIL) {
-                    throw new Error(options?.failureMessage || "Test assertion failed");
+                    throw new Error(options?.failureMessage || "Test assertion failed")
                 }
     
-                await sleep(wait);
-                logger.debug(`Waiting ${wait}ms`);
+                await sleep(wait)
+                logger.debug(`Waiting ${wait}ms`)
         }
-        throw new Error(`Wait time of ${timeout}ms for ${notAvailableContext || target} exceeded`);
+        throw new Error(`Wait time of ${timeout}ms for ${notAvailableContext || target} exceeded`)
     } catch (error) {
         handleError(globalConfig.errorsConfig, error as Error, target, type)
     }
-};
+}
 
 export const waitForSelector = async (
     page: Page,
@@ -63,11 +63,11 @@ export const waitForSelector = async (
             timeout: Number(process.env['SELECTOR_TIMEOUT'])
             // TODO: Use -> timeout: envNumber('SELECTOR_TIMEOUT')
         })
-        return true;
+        return true
     } catch (e) {
-        return false;
+        return false
     }
-};
+}
 
 export const waitForSelectorOnPage = async (
     page: Page,
@@ -81,11 +81,11 @@ export const waitForSelectorOnPage = async (
             timeout: Number(process.env['SELECTOR_TIMEOUT'])
             // TODO: Use -> timeout: envNumber('SELECTOR_TIMEOUT')
         })
-        return true;
+        return true
     } catch (e) {
-        return false;
+        return false
     }
-};
+}
 
 export const waitForSelectorInIframe = async (
     elementIframe: Frame,
@@ -97,8 +97,8 @@ export const waitForSelectorInIframe = async (
             timeout: Number(process.env['SELECTOR_TIMEOUT'])
             // TODO: Use -> timeout: envNumber('SELECTOR_TIMEOUT')
         })
-        return true;
+        return true
     } catch (e) {
-        return false;
+        return false
     }
-};
+}
